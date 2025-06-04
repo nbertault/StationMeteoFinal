@@ -1,0 +1,6 @@
+<map id="RecepteurMeteo" name="RecepteurMeteo">
+<area shape="rect" id="node1" title=" " alt="" coords="59,375,212,599"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,83"/>
+<area shape="rect" id="node4" href="$class_diffuseur_meteo.html" title=" " alt="" coords="63,154,208,290"/>
+<area shape="rect" id="node3" href="$class_acces_b_d_d.html" title=" " alt="" coords="232,132,444,312"/>
+</map>

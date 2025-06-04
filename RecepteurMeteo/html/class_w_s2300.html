@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RecepteurMeteo: Référence de la classe WS2300</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RecepteurMeteo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_w_s2300.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_w_s2300-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe WS2300</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ws2300_8h_source.html">ws2300.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de WS2300:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_w_s2300__coll__graph.png" border="0" usemap="#a_w_s2300_coll__map" alt="Collaboration graph"/></div>
+<map name="a_w_s2300_coll__map" id="a_w_s2300_coll__map">
+<area shape="rect" title=" " alt="" coords="41,677,229,989"/>
+<area shape="rect" href="class_capteurs.html" title=" " alt="" coords="57,375,214,628"/>
+<area shape="rect" title=" " alt="" coords="5,5,76,83"/>
+<area shape="rect" href="class_diffuseur_meteo.html" title=" " alt="" coords="63,154,208,290"/>
+<area shape="rect" href="class_acces_b_d_d.html" title=" " alt="" coords="232,132,444,312"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a3d7eab4f66b4e41bf0298607d4a5d447"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a3d7eab4f66b4e41bf0298607d4a5d447">WS2300</a> (QString &amp;_listeDonnees, const QStringList &amp;_infosCapteur, <a class="el" href="class_acces_b_d_d.html">AccesBDD</a> &amp;_laBDD, <a class="el" href="class_diffuseur_meteo.html">DiffuseurMeteo</a> &amp;_diffusion)</td></tr>
+<tr class="memdesc:a3d7eab4f66b4e41bf0298607d4a5d447"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_w_s2300.html#a3d7eab4f66b4e41bf0298607d4a5d447" title="WS2300::WS2300.">WS2300::WS2300</a>.  <a href="class_w_s2300.html#a3d7eab4f66b4e41bf0298607d4a5d447">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3d7eab4f66b4e41bf0298607d4a5d447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d319506051df08e679c01ad9668518"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a48d319506051df08e679c01ad9668518">~WS2300</a> ()</td></tr>
+<tr class="memdesc:a48d319506051df08e679c01ad9668518"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_w_s2300.html#a48d319506051df08e679c01ad9668518" title="WS2300::~WS2300.">WS2300::~WS2300</a>.  <a href="class_w_s2300.html#a48d319506051df08e679c01ad9668518">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a48d319506051df08e679c01ad9668518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6e5d17216c1d64cacc5478e3b2c526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a1c6e5d17216c1d64cacc5478e3b2c526">AjouterDonnees</a> (const QString &amp;_donnees)</td></tr>
+<tr class="memdesc:a1c6e5d17216c1d64cacc5478e3b2c526"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_w_s2300.html#a1c6e5d17216c1d64cacc5478e3b2c526" title="WS2300::AjouterDonnees.">WS2300::AjouterDonnees</a>.  <a href="class_w_s2300.html#a1c6e5d17216c1d64cacc5478e3b2c526">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1c6e5d17216c1d64cacc5478e3b2c526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55609c8857bb2279f0b5266d1c6005dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a55609c8857bb2279f0b5266d1c6005dc">EnregistrerDonnees</a> ()</td></tr>
+<tr class="memdesc:a55609c8857bb2279f0b5266d1c6005dc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_w_s2300.html#a55609c8857bb2279f0b5266d1c6005dc" title="WS2300::EnregistrerDonnees.">WS2300::EnregistrerDonnees</a>.  <a href="class_w_s2300.html#a55609c8857bb2279f0b5266d1c6005dc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a55609c8857bb2279f0b5266d1c6005dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517a80ee9f0705663b1999c7dd83ab59"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a517a80ee9f0705663b1999c7dd83ab59">CalculerMoyenne</a> (const QVector&lt; float &gt; &amp;_tableau)</td></tr>
+<tr class="memdesc:a517a80ee9f0705663b1999c7dd83ab59"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_capteurs_thermo_hygro.html#ad5c3bc7abe8e4632a94d3056a5a1e270" title="CapteursThermoHygro::CalculerMoyenne.">CapteursThermoHygro::CalculerMoyenne</a>.  <a href="class_w_s2300.html#a517a80ee9f0705663b1999c7dd83ab59">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a517a80ee9f0705663b1999c7dd83ab59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37a09f9cfab63a29fa28a8a1761b22f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#af37a09f9cfab63a29fa28a8a1761b22f">DiffuserDonnees</a> (const int &amp;_cle, QString &amp;_donnees)</td></tr>
+<tr class="memdesc:af37a09f9cfab63a29fa28a8a1761b22f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_capteurs_thermo_hygro.html#a9ec189e76ff606103eb47ae64be0d527" title="CapteursThermoHygro::DiffuserDonnees.">CapteursThermoHygro::DiffuserDonnees</a>.  <a href="class_w_s2300.html#af37a09f9cfab63a29fa28a8a1761b22f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af37a09f9cfab63a29fa28a8a1761b22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_capteurs"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_capteurs')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_capteurs.html">Capteurs</a></td></tr>
+<tr class="memitem:a8671286befd36764cfea507f97e1176e inherit pub_methods_class_capteurs"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#a8671286befd36764cfea507f97e1176e">Capteurs</a> (const QStringList &amp;_infosCapteur, <a class="el" href="class_acces_b_d_d.html">AccesBDD</a> &amp;_laBDD, <a class="el" href="class_diffuseur_meteo.html">DiffuseurMeteo</a> &amp;_diffusion)</td></tr>
+<tr class="memdesc:a8671286befd36764cfea507f97e1176e inherit pub_methods_class_capteurs"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_capteurs.html#a8671286befd36764cfea507f97e1176e" title="Capteurs::Capteurs.">Capteurs::Capteurs</a>.  <a href="class_capteurs.html#a8671286befd36764cfea507f97e1176e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8671286befd36764cfea507f97e1176e inherit pub_methods_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0e38fada71279279b2d3938485304b inherit pub_methods_class_capteurs"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#a8d0e38fada71279279b2d3938485304b">~Capteurs</a> ()</td></tr>
+<tr class="memdesc:a8d0e38fada71279279b2d3938485304b inherit pub_methods_class_capteurs"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_capteurs.html#a8d0e38fada71279279b2d3938485304b" title="Capteurs::~Capteurs.">Capteurs::~Capteurs</a>.  <a href="class_capteurs.html#a8d0e38fada71279279b2d3938485304b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8d0e38fada71279279b2d3938485304b inherit pub_methods_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a1cbe8a63ae8529239e59d57fa0657aea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a1cbe8a63ae8529239e59d57fa0657aea">CalculerPrecipitationsDemiHeure</a> ()</td></tr>
+<tr class="memdesc:a1cbe8a63ae8529239e59d57fa0657aea"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_w_s2300.html#a1cbe8a63ae8529239e59d57fa0657aea" title="WS2300::CalculerPrecipitationsDemiHeure.">WS2300::CalculerPrecipitationsDemiHeure</a>.  <a href="class_w_s2300.html#a1cbe8a63ae8529239e59d57fa0657aea">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1cbe8a63ae8529239e59d57fa0657aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab129248526288767596e87d68e5251cf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#ab129248526288767596e87d68e5251cf">CalculerPrecipitations</a> ()</td></tr>
+<tr class="memdesc:ab129248526288767596e87d68e5251cf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_w_s2300.html#ab129248526288767596e87d68e5251cf" title="WS2300::CalculerPrecipitations.">WS2300::CalculerPrecipitations</a>.  <a href="class_w_s2300.html#ab129248526288767596e87d68e5251cf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab129248526288767596e87d68e5251cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a5c858b53c8ba803a84a0d1897100a5e4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a5c858b53c8ba803a84a0d1897100a5e4">ventMax</a></td></tr>
+<tr class="separator:a5c858b53c8ba803a84a0d1897100a5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c162f24eeb2e4166e56da07ed94dbe2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a3c162f24eeb2e4166e56da07ed94dbe2">nouvellesPrecipitations</a></td></tr>
+<tr class="separator:a3c162f24eeb2e4166e56da07ed94dbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09140e045bbd587b11b1661ba09466e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a09140e045bbd587b11b1661ba09466e9">precipitationsDerniereDemiHeure</a></td></tr>
+<tr class="separator:a09140e045bbd587b11b1661ba09466e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb013a1084c59cb5ebdb95d15d0e246"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#afbb013a1084c59cb5ebdb95d15d0e246">precipitationsPrecedentes</a></td></tr>
+<tr class="separator:afbb013a1084c59cb5ebdb95d15d0e246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d54263dc8b659e55b5c15f4639fd89"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#ad2d54263dc8b659e55b5c15f4639fd89">tableauTemperature</a></td></tr>
+<tr class="separator:ad2d54263dc8b659e55b5c15f4639fd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32dfc8237146ddfbdade0e3a28801fe"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#af32dfc8237146ddfbdade0e3a28801fe">tableauVentMoy</a></td></tr>
+<tr class="separator:af32dfc8237146ddfbdade0e3a28801fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91572d3936cf19c24bc5b9c0c604d66b"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#a91572d3936cf19c24bc5b9c0c604d66b">tableauHumidite</a></td></tr>
+<tr class="separator:a91572d3936cf19c24bc5b9c0c604d66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac963d2c5567c9575de3b3d374901bf2a"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_s2300.html#ac963d2c5567c9575de3b3d374901bf2a">tableauDirectionVent</a></td></tr>
+<tr class="separator:ac963d2c5567c9575de3b3d374901bf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Membres hérités additionnels</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_capteurs"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_capteurs')"><img src="closed.png" alt="-"/>&#160;Attributs publics hérités de <a class="el" href="class_capteurs.html">Capteurs</a></td></tr>
+<tr class="memitem:ae0a329c38ce019ece9971387ad0ebd43 inherit pub_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#ae0a329c38ce019ece9971387ad0ebd43">idCourant</a></td></tr>
+<tr class="separator:ae0a329c38ce019ece9971387ad0ebd43 inherit pub_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadfcc4c0b1496e567444a2d64e31f3ef inherit pub_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#aadfcc4c0b1496e567444a2d64e31f3ef">id</a></td></tr>
+<tr class="separator:aadfcc4c0b1496e567444a2d64e31f3ef inherit pub_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97df077c4ac38a714750013d1097fb2 inherit pub_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#ac97df077c4ac38a714750013d1097fb2">donneesAjoutees</a></td></tr>
+<tr class="separator:ac97df077c4ac38a714750013d1097fb2 inherit pub_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfdfa4e9053cc5f020cb98c8482cf990 inherit pub_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#abfdfa4e9053cc5f020cb98c8482cf990">donneesADiffuser</a></td></tr>
+<tr class="separator:abfdfa4e9053cc5f020cb98c8482cf990 inherit pub_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_capteurs"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_capteurs')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_capteurs.html">Capteurs</a></td></tr>
+<tr class="memitem:ae03d33ab8b11d46d1bd8234572486112 inherit pro_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#ae03d33ab8b11d46d1bd8234572486112">canal</a></td></tr>
+<tr class="separator:ae03d33ab8b11d46d1bd8234572486112 inherit pro_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f83acf5b9f5ebb1ade4b0a9a6887b6 inherit pro_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#ad1f83acf5b9f5ebb1ade4b0a9a6887b6">donnees</a></td></tr>
+<tr class="separator:ad1f83acf5b9f5ebb1ade4b0a9a6887b6 inherit pro_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e53c565e94d08f4c1879dc0aedf905 inherit pro_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#a16e53c565e94d08f4c1879dc0aedf905">modele</a></td></tr>
+<tr class="separator:a16e53c565e94d08f4c1879dc0aedf905 inherit pro_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e943f67e24c83a1d38241cecd7cb63c inherit pro_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_acces_b_d_d.html">AccesBDD</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#a2e943f67e24c83a1d38241cecd7cb63c">laBDD</a></td></tr>
+<tr class="separator:a2e943f67e24c83a1d38241cecd7cb63c inherit pro_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e13505406058f7f8ab70836e51b728 inherit pro_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_diffuseur_meteo.html">DiffuseurMeteo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#ae5e13505406058f7f8ab70836e51b728">diffusion</a></td></tr>
+<tr class="separator:ae5e13505406058f7f8ab70836e51b728 inherit pro_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57dfa1b9387660842fa522f04eddc89 inherit pro_attribs_class_capteurs"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_capteurs.html#ab57dfa1b9387660842fa522f04eddc89">delaiReception</a></td></tr>
+<tr class="separator:ab57dfa1b9387660842fa522f04eddc89 inherit pro_attribs_class_capteurs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a3d7eab4f66b4e41bf0298607d4a5d447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7eab4f66b4e41bf0298607d4a5d447">&#9670;&nbsp;</a></span>WS2300()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WS2300::WS2300 </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>_listeDonnees</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>_infosCapteur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_acces_b_d_d.html">AccesBDD</a> &amp;&#160;</td>
+          <td class="paramname"><em>_laBDD</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_diffuseur_meteo.html">DiffuseurMeteo</a> &amp;&#160;</td>
+          <td class="paramname"><em>_diffusion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_w_s2300.html#a3d7eab4f66b4e41bf0298607d4a5d447" title="WS2300::WS2300.">WS2300::WS2300</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_listeDonnees</td><td>Liste des données fournies par le capteur </td></tr>
+    <tr><td class="paramname">_infosCapteur</td><td>Liste des informations concernant le capteur </td></tr>
+    <tr><td class="paramname">_laBDD</td><td>Pointeur permettant un accès constant à la BDD </td></tr>
+    <tr><td class="paramname">_diffusion</td><td>Pointeur permettant un accès constant au serveur WebSocket</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Constructeur de la classe, ajoute les premières données aux tableaux et attribut les paramètre à la classe virtuel <a class="el" href="class_capteurs.html">Capteurs</a> </p>
+
+</div>
+</div>
+<a id="a48d319506051df08e679c01ad9668518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48d319506051df08e679c01ad9668518">&#9670;&nbsp;</a></span>~WS2300()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WS2300::~WS2300 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_w_s2300.html#a48d319506051df08e679c01ad9668518" title="WS2300::~WS2300.">WS2300::~WS2300</a>. </p>
+<p>Destructeur de la classe </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a1c6e5d17216c1d64cacc5478e3b2c526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6e5d17216c1d64cacc5478e3b2c526">&#9670;&nbsp;</a></span>AjouterDonnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WS2300::AjouterDonnees </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>_donnees</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_w_s2300.html#a1c6e5d17216c1d64cacc5478e3b2c526" title="WS2300::AjouterDonnees.">WS2300::AjouterDonnees</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_donnees</td><td>Liste des données à ajouter aux tableaux</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Fonction virtuel, permet l'ajout de nouvelles données dans les tableaux </p>
+
+<p>Implémente <a class="el" href="class_capteurs.html#a752c3b3116a1c8608501b7e1b5f69375">Capteurs</a>.</p>
+
+</div>
+</div>
+<a id="a517a80ee9f0705663b1999c7dd83ab59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517a80ee9f0705663b1999c7dd83ab59">&#9670;&nbsp;</a></span>CalculerMoyenne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::CalculerMoyenne </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>_tableau</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_capteurs_thermo_hygro.html#ad5c3bc7abe8e4632a94d3056a5a1e270" title="CapteursThermoHygro::CalculerMoyenne.">CapteursThermoHygro::CalculerMoyenne</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_tableau</td><td>Tableau contenenant les données </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Retourne un floattant étant la moyenne de la totalité des données dans le tableau</dd></dl>
+<p>Fonction virtuel, permet le calcul de la moyenne des données d'un tableau </p>
+
+<p>Implémente <a class="el" href="class_capteurs.html#a7822cc80bb68a6eecbcde698c67591cd">Capteurs</a>.</p>
+
+</div>
+</div>
+<a id="ab129248526288767596e87d68e5251cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab129248526288767596e87d68e5251cf">&#9670;&nbsp;</a></span>CalculerPrecipitations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::CalculerPrecipitations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_w_s2300.html#ab129248526288767596e87d68e5251cf" title="WS2300::CalculerPrecipitations.">WS2300::CalculerPrecipitations</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Retourne la valeur des précipitations à partir des attributs de la classe</dd></dl>
+<p>Calcul la précipitation en fonction de l'ancienne valeur totale </p>
+
+</div>
+</div>
+<a id="a1cbe8a63ae8529239e59d57fa0657aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cbe8a63ae8529239e59d57fa0657aea">&#9670;&nbsp;</a></span>CalculerPrecipitationsDemiHeure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::CalculerPrecipitationsDemiHeure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_w_s2300.html#a1cbe8a63ae8529239e59d57fa0657aea" title="WS2300::CalculerPrecipitationsDemiHeure.">WS2300::CalculerPrecipitationsDemiHeure</a>. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Retourne la valeur des précipitations sur une demi-heure à partir des attributs de la classe</dd></dl>
+<p>Calcul la précipitation en fonction de l'ancienne valeur totale </p>
+
+</div>
+</div>
+<a id="af37a09f9cfab63a29fa28a8a1761b22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37a09f9cfab63a29fa28a8a1761b22f">&#9670;&nbsp;</a></span>DiffuserDonnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WS2300::DiffuserDonnees </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>_cle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>_donnees</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_capteurs_thermo_hygro.html#a9ec189e76ff606103eb47ae64be0d527" title="CapteursThermoHygro::DiffuserDonnees.">CapteursThermoHygro::DiffuserDonnees</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_cle</td><td>Clé attribué par la classe recepteur météo permettant l'identification des capteurs par les clients WebSocket </td></tr>
+    <tr><td class="paramname">_donnees</td><td>Liste des données à diffuser aux clients WebSocket</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Fonction virtuel, permet la diffusion des données grâce au serveur WebSocket </p>
+
+<p>Implémente <a class="el" href="class_capteurs.html#a2d5ab495ba8dca889581b96c8878581c">Capteurs</a>.</p>
+
+</div>
+</div>
+<a id="a55609c8857bb2279f0b5266d1c6005dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55609c8857bb2279f0b5266d1c6005dc">&#9670;&nbsp;</a></span>EnregistrerDonnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WS2300::EnregistrerDonnees </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_w_s2300.html#a55609c8857bb2279f0b5266d1c6005dc" title="WS2300::EnregistrerDonnees.">WS2300::EnregistrerDonnees</a>. </p>
+<p>Fonction virtuel, permet l'enregistrement des données dans la BDD </p>
+
+<p>Implémente <a class="el" href="class_capteurs.html#a4e841d40680093b14148080a10b9adca">Capteurs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a3c162f24eeb2e4166e56da07ed94dbe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c162f24eeb2e4166e56da07ed94dbe2">&#9670;&nbsp;</a></span>nouvellesPrecipitations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::nouvellesPrecipitations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Dernière précipitation reçue </p>
+
+</div>
+</div>
+<a id="a09140e045bbd587b11b1661ba09466e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09140e045bbd587b11b1661ba09466e9">&#9670;&nbsp;</a></span>precipitationsDerniereDemiHeure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::precipitationsDerniereDemiHeure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Première précipitation reçue lors de la dernière demie-heure </p>
+
+</div>
+</div>
+<a id="afbb013a1084c59cb5ebdb95d15d0e246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb013a1084c59cb5ebdb95d15d0e246">&#9670;&nbsp;</a></span>precipitationsPrecedentes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::precipitationsPrecedentes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Précipitation reçue précédemment </p>
+
+</div>
+</div>
+<a id="ac963d2c5567c9575de3b3d374901bf2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac963d2c5567c9575de3b3d374901bf2a">&#9670;&nbsp;</a></span>tableauDirectionVent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;float&gt; WS2300::tableauDirectionVent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tableau regroupant les valeurs de direction du vent </p>
+
+</div>
+</div>
+<a id="a91572d3936cf19c24bc5b9c0c604d66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91572d3936cf19c24bc5b9c0c604d66b">&#9670;&nbsp;</a></span>tableauHumidite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;float&gt; WS2300::tableauHumidite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tableau regroupant les valeurs d'humidité </p>
+
+</div>
+</div>
+<a id="ad2d54263dc8b659e55b5c15f4639fd89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d54263dc8b659e55b5c15f4639fd89">&#9670;&nbsp;</a></span>tableauTemperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;float&gt; WS2300::tableauTemperature</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tableau regroupant les valeurs de température </p>
+
+</div>
+</div>
+<a id="af32dfc8237146ddfbdade0e3a28801fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32dfc8237146ddfbdade0e3a28801fe">&#9670;&nbsp;</a></span>tableauVentMoy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;float&gt; WS2300::tableauVentMoy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tableau regroupant les valeurs moyennes de la vitesse du vent </p>
+
+</div>
+</div>
+<a id="a5c858b53c8ba803a84a0d1897100a5e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c858b53c8ba803a84a0d1897100a5e4">&#9670;&nbsp;</a></span>ventMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WS2300::ventMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flottant définnissant la vitesse maximal atteinte par le vent dans un certain interval </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="ws2300_8h_source.html">ws2300.h</a></li>
+<li><a class="el" href="ws2300_8cpp.html">ws2300.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_w_s2300.html">WS2300</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<map id="WS2300" name="WS2300">
+<area shape="rect" id="node1" title=" " alt="" coords="41,677,229,989"/>
+<area shape="rect" id="node2" href="$class_capteurs.html" title=" " alt="" coords="57,375,214,628"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,76,83"/>
+<area shape="rect" id="node5" href="$class_diffuseur_meteo.html" title=" " alt="" coords="63,154,208,290"/>
+<area shape="rect" id="node4" href="$class_acces_b_d_d.html" title=" " alt="" coords="232,132,444,312"/>
+</map>

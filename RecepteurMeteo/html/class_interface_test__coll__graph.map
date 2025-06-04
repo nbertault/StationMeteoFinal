@@ -1,0 +1,10 @@
+<map id="InterfaceTest" name="InterfaceTest">
+<area shape="rect" id="node1" title=" " alt="" coords="196,1065,399,1275"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,808,75,885"/>
+<area shape="rect" id="node3" href="$class_capteurs_thermo_hygro.html" title=" " alt="" coords="311,764,494,929"/>
+<area shape="rect" id="node4" href="$class_capteurs.html" title=" " alt="" coords="251,375,408,628"/>
+<area shape="rect" id="node8" href="$class_w_s2300.html" title=" " alt="" coords="99,691,287,1003"/>
+<area shape="rect" id="node5" title=" " alt="" coords="167,5,238,83"/>
+<area shape="rect" id="node7" href="$class_diffuseur_meteo.html" title=" " alt="" coords="459,154,605,290"/>
+<area shape="rect" id="node6" href="$class_acces_b_d_d.html" title=" " alt="" coords="223,132,435,312"/>
+</map>

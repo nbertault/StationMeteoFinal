@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RecepteurMeteo:  Fichier source de capteursthermohygro.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RecepteurMeteo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('capteursthermohygro_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">capteursthermohygro.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="capteursthermohygro_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CAPTEURSTHERMOHYGRO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CAPTEURSTHERMOHYGRO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="capteurs_8h.html">capteurs.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_capteurs_thermo_hygro.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_capteurs_thermo_hygro.html">CapteursThermoHygro</a> : <span class="keyword">public</span> <a class="code" href="class_capteurs.html">Capteurs</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_capteurs_thermo_hygro.html#a4c57866a63e0bac73d05ca1d67ce0bf9">CapteursThermoHygro</a>(QString &amp;_listeDonnees, <span class="keyword">const</span> QStringList &amp;_infosCapteur, <a class="code" href="class_acces_b_d_d.html">AccesBDD</a> &amp;_laBDD, <a class="code" href="class_diffuseur_meteo.html">DiffuseurMeteo</a> &amp;_diffusion);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_capteurs_thermo_hygro.html#aec691680e1e648fbed65cf8f8d95a07a">~CapteursThermoHygro</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_capteurs_thermo_hygro.html#a4cb1346ba4fd4f09e239765cc8403992">AjouterDonnees</a>(<span class="keyword">const</span> QString &amp;_donnees);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_capteurs_thermo_hygro.html#abb4fe0fcfc0232615af9c75bad49a000">EnregistrerDonnees</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_capteurs_thermo_hygro.html#ad5c3bc7abe8e4632a94d3056a5a1e270">CalculerMoyenne</a>(<span class="keyword">const</span> QVector&lt;float&gt;&amp; _tableau);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_capteurs_thermo_hygro.html#a9ec189e76ff606103eb47ae64be0d527">DiffuserDonnees</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;_cle, QString &amp;_donnees);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_capteurs_thermo_hygro.html#a88e35aae14caa498a7e54b7ef1f2c2d1">   19</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_capteurs_thermo_hygro.html#a88e35aae14caa498a7e54b7ef1f2c2d1">tableauTemperature</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_capteurs_thermo_hygro.html#a6d02d79bcef50e8f6af43e496de76765">   24</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_capteurs_thermo_hygro.html#a6d02d79bcef50e8f6af43e496de76765">tableauHumidite</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CAPTEURSTHERMOHYGRO_H</span></div>
+<div class="ttc" id="acapteurs_8h_html"><div class="ttname"><a href="capteurs_8h.html">capteurs.h</a></div></div>
+<div class="ttc" id="aclass_acces_b_d_d_html"><div class="ttname"><a href="class_acces_b_d_d.html">AccesBDD</a></div><div class="ttdef"><b>Definition:</b> accesbdd.h:10</div></div>
+<div class="ttc" id="aclass_capteurs_html"><div class="ttname"><a href="class_capteurs.html">Capteurs</a></div><div class="ttdef"><b>Definition:</b> capteurs.h:12</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html"><div class="ttname"><a href="class_capteurs_thermo_hygro.html">CapteursThermoHygro</a></div><div class="ttdef"><b>Definition:</b> capteursthermohygro.h:7</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_a4c57866a63e0bac73d05ca1d67ce0bf9"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#a4c57866a63e0bac73d05ca1d67ce0bf9">CapteursThermoHygro::CapteursThermoHygro</a></div><div class="ttdeci">CapteursThermoHygro(QString &amp;_listeDonnees, const QStringList &amp;_infosCapteur, AccesBDD &amp;_laBDD, DiffuseurMeteo &amp;_diffusion)</div><div class="ttdoc">CapteursThermoHygro::CapteursThermoHygro.</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.cpp:11</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_a4cb1346ba4fd4f09e239765cc8403992"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#a4cb1346ba4fd4f09e239765cc8403992">CapteursThermoHygro::AjouterDonnees</a></div><div class="ttdeci">void AjouterDonnees(const QString &amp;_donnees)</div><div class="ttdoc">CapteursThermoHygro::AjouterDonnees.</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.cpp:35</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_a6d02d79bcef50e8f6af43e496de76765"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#a6d02d79bcef50e8f6af43e496de76765">CapteursThermoHygro::tableauHumidite</a></div><div class="ttdeci">QVector&lt; float &gt; tableauHumidite</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.h:24</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_a88e35aae14caa498a7e54b7ef1f2c2d1"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#a88e35aae14caa498a7e54b7ef1f2c2d1">CapteursThermoHygro::tableauTemperature</a></div><div class="ttdeci">QVector&lt; float &gt; tableauTemperature</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.h:19</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_a9ec189e76ff606103eb47ae64be0d527"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#a9ec189e76ff606103eb47ae64be0d527">CapteursThermoHygro::DiffuserDonnees</a></div><div class="ttdeci">void DiffuserDonnees(const int &amp;_cle, QString &amp;_donnees)</div><div class="ttdoc">CapteursThermoHygro::DiffuserDonnees.</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.cpp:117</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_abb4fe0fcfc0232615af9c75bad49a000"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#abb4fe0fcfc0232615af9c75bad49a000">CapteursThermoHygro::EnregistrerDonnees</a></div><div class="ttdeci">void EnregistrerDonnees()</div><div class="ttdoc">CapteursThermoHygro::EnregistrerDonnees.</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.cpp:64</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_ad5c3bc7abe8e4632a94d3056a5a1e270"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#ad5c3bc7abe8e4632a94d3056a5a1e270">CapteursThermoHygro::CalculerMoyenne</a></div><div class="ttdeci">float CalculerMoyenne(const QVector&lt; float &gt; &amp;_tableau)</div><div class="ttdoc">CapteursThermoHygro::CalculerMoyenne.</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.cpp:100</div></div>
+<div class="ttc" id="aclass_capteurs_thermo_hygro_html_aec691680e1e648fbed65cf8f8d95a07a"><div class="ttname"><a href="class_capteurs_thermo_hygro.html#aec691680e1e648fbed65cf8f8d95a07a">CapteursThermoHygro::~CapteursThermoHygro</a></div><div class="ttdeci">~CapteursThermoHygro()</div><div class="ttdoc">CapteursThermoHygro::~CapteursThermoHygro.</div><div class="ttdef"><b>Definition:</b> capteursthermohygro.cpp:25</div></div>
+<div class="ttc" id="aclass_diffuseur_meteo_html"><div class="ttname"><a href="class_diffuseur_meteo.html">DiffuseurMeteo</a></div><div class="ttdef"><b>Definition:</b> diffuseurmeteo.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="capteursthermohygro_8h.html">capteursthermohygro.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

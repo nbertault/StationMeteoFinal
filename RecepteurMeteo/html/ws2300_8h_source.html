@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RecepteurMeteo:  Fichier source de ws2300.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RecepteurMeteo
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ws2300_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ws2300.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ws2300_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WS2300_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WS2300_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="capteurs_8h.html">capteurs.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_w_s2300.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_w_s2300.html">WS2300</a> : <span class="keyword">public</span> <a class="code" href="class_capteurs.html">Capteurs</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_w_s2300.html#a3d7eab4f66b4e41bf0298607d4a5d447">WS2300</a>(QString &amp;_listeDonnees, <span class="keyword">const</span> QStringList &amp;_infosCapteur, <a class="code" href="class_acces_b_d_d.html">AccesBDD</a> &amp;_laBDD, <a class="code" href="class_diffuseur_meteo.html">DiffuseurMeteo</a> &amp;_diffusion);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_w_s2300.html#a48d319506051df08e679c01ad9668518">~WS2300</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_w_s2300.html#a1c6e5d17216c1d64cacc5478e3b2c526">AjouterDonnees</a>(<span class="keyword">const</span> QString &amp;_donnees);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_w_s2300.html#a55609c8857bb2279f0b5266d1c6005dc">EnregistrerDonnees</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#a517a80ee9f0705663b1999c7dd83ab59">CalculerMoyenne</a>(<span class="keyword">const</span> QVector&lt;float&gt;&amp; _tableau);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_w_s2300.html#af37a09f9cfab63a29fa28a8a1761b22f">DiffuserDonnees</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;_cle, QString &amp;_donnees);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#a1cbe8a63ae8529239e59d57fa0657aea">CalculerPrecipitationsDemiHeure</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#ab129248526288767596e87d68e5251cf">CalculerPrecipitations</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_w_s2300.html#a5c858b53c8ba803a84a0d1897100a5e4">   22</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#a5c858b53c8ba803a84a0d1897100a5e4">ventMax</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_w_s2300.html#a3c162f24eeb2e4166e56da07ed94dbe2">   27</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#a3c162f24eeb2e4166e56da07ed94dbe2">nouvellesPrecipitations</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_w_s2300.html#a09140e045bbd587b11b1661ba09466e9">   32</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#a09140e045bbd587b11b1661ba09466e9">precipitationsDerniereDemiHeure</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_w_s2300.html#afbb013a1084c59cb5ebdb95d15d0e246">   37</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_w_s2300.html#afbb013a1084c59cb5ebdb95d15d0e246">precipitationsPrecedentes</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_w_s2300.html#ad2d54263dc8b659e55b5c15f4639fd89">   42</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_w_s2300.html#ad2d54263dc8b659e55b5c15f4639fd89">tableauTemperature</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_w_s2300.html#af32dfc8237146ddfbdade0e3a28801fe">   47</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_w_s2300.html#af32dfc8237146ddfbdade0e3a28801fe">tableauVentMoy</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_w_s2300.html#a91572d3936cf19c24bc5b9c0c604d66b">   52</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_w_s2300.html#a91572d3936cf19c24bc5b9c0c604d66b">tableauHumidite</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_w_s2300.html#ac963d2c5567c9575de3b3d374901bf2a">   57</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_w_s2300.html#ac963d2c5567c9575de3b3d374901bf2a">tableauDirectionVent</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// WS2300_H</span></div>
+<div class="ttc" id="acapteurs_8h_html"><div class="ttname"><a href="capteurs_8h.html">capteurs.h</a></div></div>
+<div class="ttc" id="aclass_acces_b_d_d_html"><div class="ttname"><a href="class_acces_b_d_d.html">AccesBDD</a></div><div class="ttdef"><b>Definition:</b> accesbdd.h:10</div></div>
+<div class="ttc" id="aclass_capteurs_html"><div class="ttname"><a href="class_capteurs.html">Capteurs</a></div><div class="ttdef"><b>Definition:</b> capteurs.h:12</div></div>
+<div class="ttc" id="aclass_diffuseur_meteo_html"><div class="ttname"><a href="class_diffuseur_meteo.html">DiffuseurMeteo</a></div><div class="ttdef"><b>Definition:</b> diffuseurmeteo.h:10</div></div>
+<div class="ttc" id="aclass_w_s2300_html"><div class="ttname"><a href="class_w_s2300.html">WS2300</a></div><div class="ttdef"><b>Definition:</b> ws2300.h:7</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a09140e045bbd587b11b1661ba09466e9"><div class="ttname"><a href="class_w_s2300.html#a09140e045bbd587b11b1661ba09466e9">WS2300::precipitationsDerniereDemiHeure</a></div><div class="ttdeci">float precipitationsDerniereDemiHeure</div><div class="ttdef"><b>Definition:</b> ws2300.h:32</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a1c6e5d17216c1d64cacc5478e3b2c526"><div class="ttname"><a href="class_w_s2300.html#a1c6e5d17216c1d64cacc5478e3b2c526">WS2300::AjouterDonnees</a></div><div class="ttdeci">void AjouterDonnees(const QString &amp;_donnees)</div><div class="ttdoc">WS2300::AjouterDonnees.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:37</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a1cbe8a63ae8529239e59d57fa0657aea"><div class="ttname"><a href="class_w_s2300.html#a1cbe8a63ae8529239e59d57fa0657aea">WS2300::CalculerPrecipitationsDemiHeure</a></div><div class="ttdeci">float CalculerPrecipitationsDemiHeure()</div><div class="ttdoc">WS2300::CalculerPrecipitationsDemiHeure.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:186</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a3c162f24eeb2e4166e56da07ed94dbe2"><div class="ttname"><a href="class_w_s2300.html#a3c162f24eeb2e4166e56da07ed94dbe2">WS2300::nouvellesPrecipitations</a></div><div class="ttdeci">float nouvellesPrecipitations</div><div class="ttdef"><b>Definition:</b> ws2300.h:27</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a3d7eab4f66b4e41bf0298607d4a5d447"><div class="ttname"><a href="class_w_s2300.html#a3d7eab4f66b4e41bf0298607d4a5d447">WS2300::WS2300</a></div><div class="ttdeci">WS2300(QString &amp;_listeDonnees, const QStringList &amp;_infosCapteur, AccesBDD &amp;_laBDD, DiffuseurMeteo &amp;_diffusion)</div><div class="ttdoc">WS2300::WS2300.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:11</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a48d319506051df08e679c01ad9668518"><div class="ttname"><a href="class_w_s2300.html#a48d319506051df08e679c01ad9668518">WS2300::~WS2300</a></div><div class="ttdeci">~WS2300()</div><div class="ttdoc">WS2300::~WS2300.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:27</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a517a80ee9f0705663b1999c7dd83ab59"><div class="ttname"><a href="class_w_s2300.html#a517a80ee9f0705663b1999c7dd83ab59">WS2300::CalculerMoyenne</a></div><div class="ttdeci">float CalculerMoyenne(const QVector&lt; float &gt; &amp;_tableau)</div><div class="ttdoc">CapteursThermoHygro::CalculerMoyenne.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:154</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a55609c8857bb2279f0b5266d1c6005dc"><div class="ttname"><a href="class_w_s2300.html#a55609c8857bb2279f0b5266d1c6005dc">WS2300::EnregistrerDonnees</a></div><div class="ttdeci">void EnregistrerDonnees()</div><div class="ttdoc">WS2300::EnregistrerDonnees.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:74</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a5c858b53c8ba803a84a0d1897100a5e4"><div class="ttname"><a href="class_w_s2300.html#a5c858b53c8ba803a84a0d1897100a5e4">WS2300::ventMax</a></div><div class="ttdeci">float ventMax</div><div class="ttdef"><b>Definition:</b> ws2300.h:22</div></div>
+<div class="ttc" id="aclass_w_s2300_html_a91572d3936cf19c24bc5b9c0c604d66b"><div class="ttname"><a href="class_w_s2300.html#a91572d3936cf19c24bc5b9c0c604d66b">WS2300::tableauHumidite</a></div><div class="ttdeci">QVector&lt; float &gt; tableauHumidite</div><div class="ttdef"><b>Definition:</b> ws2300.h:52</div></div>
+<div class="ttc" id="aclass_w_s2300_html_ab129248526288767596e87d68e5251cf"><div class="ttname"><a href="class_w_s2300.html#ab129248526288767596e87d68e5251cf">WS2300::CalculerPrecipitations</a></div><div class="ttdeci">float CalculerPrecipitations()</div><div class="ttdoc">WS2300::CalculerPrecipitations.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:210</div></div>
+<div class="ttc" id="aclass_w_s2300_html_ac963d2c5567c9575de3b3d374901bf2a"><div class="ttname"><a href="class_w_s2300.html#ac963d2c5567c9575de3b3d374901bf2a">WS2300::tableauDirectionVent</a></div><div class="ttdeci">QVector&lt; float &gt; tableauDirectionVent</div><div class="ttdef"><b>Definition:</b> ws2300.h:57</div></div>
+<div class="ttc" id="aclass_w_s2300_html_ad2d54263dc8b659e55b5c15f4639fd89"><div class="ttname"><a href="class_w_s2300.html#ad2d54263dc8b659e55b5c15f4639fd89">WS2300::tableauTemperature</a></div><div class="ttdeci">QVector&lt; float &gt; tableauTemperature</div><div class="ttdef"><b>Definition:</b> ws2300.h:42</div></div>
+<div class="ttc" id="aclass_w_s2300_html_af32dfc8237146ddfbdade0e3a28801fe"><div class="ttname"><a href="class_w_s2300.html#af32dfc8237146ddfbdade0e3a28801fe">WS2300::tableauVentMoy</a></div><div class="ttdeci">QVector&lt; float &gt; tableauVentMoy</div><div class="ttdef"><b>Definition:</b> ws2300.h:47</div></div>
+<div class="ttc" id="aclass_w_s2300_html_af37a09f9cfab63a29fa28a8a1761b22f"><div class="ttname"><a href="class_w_s2300.html#af37a09f9cfab63a29fa28a8a1761b22f">WS2300::DiffuserDonnees</a></div><div class="ttdeci">void DiffuserDonnees(const int &amp;_cle, QString &amp;_donnees)</div><div class="ttdoc">CapteursThermoHygro::DiffuserDonnees.</div><div class="ttdef"><b>Definition:</b> ws2300.cpp:169</div></div>
+<div class="ttc" id="aclass_w_s2300_html_afbb013a1084c59cb5ebdb95d15d0e246"><div class="ttname"><a href="class_w_s2300.html#afbb013a1084c59cb5ebdb95d15d0e246">WS2300::precipitationsPrecedentes</a></div><div class="ttdeci">float precipitationsPrecedentes</div><div class="ttdef"><b>Definition:</b> ws2300.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="ws2300_8h.html">ws2300.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

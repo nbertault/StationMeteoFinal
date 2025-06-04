@@ -1,0 +1,196 @@
+\hypertarget{class_capteurs}{}\doxysection{Référence de la classe Capteurs}
+\label{class_capteurs}\index{Capteurs@{Capteurs}}
+
+
+{\ttfamily \#include $<$capteurs.\+h$>$}
+
+
+
+Graphe de collaboration de Capteurs\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_capteurs__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_capteurs_a8671286befd36764cfea507f97e1176e}{Capteurs}} (const QString\+List \&\+\_\+infos\+Capteur, \mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} \&\+\_\+la\+BDD, \mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}} \&\+\_\+diffusion)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_capteurs_a8671286befd36764cfea507f97e1176e}{Capteurs\+::\+Capteurs}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_capteurs_a8d0e38fada71279279b2d3938485304b}{$\sim$\+Capteurs}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_capteurs_a8d0e38fada71279279b2d3938485304b}{Capteurs\+::$\sim$\+Capteurs}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_capteurs_a752c3b3116a1c8608501b7e1b5f69375}{Ajouter\+Donnees}} (const QString \&\+\_\+donnees)=0
+\item 
+virtual void \mbox{\hyperlink{class_capteurs_a4e841d40680093b14148080a10b9adca}{Enregistrer\+Donnees}} ()=0
+\item 
+virtual float \mbox{\hyperlink{class_capteurs_a7822cc80bb68a6eecbcde698c67591cd}{Calculer\+Moyenne}} (const QVector$<$ float $>$ \&\+\_\+tableau)=0
+\item 
+virtual void \mbox{\hyperlink{class_capteurs_a2d5ab495ba8dca889581b96c8878581c}{Diffuser\+Donnees}} (const int \&\+\_\+cle, QString \&\+\_\+donnees)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_capteurs_ae0a329c38ce019ece9971387ad0ebd43}{id\+Courant}}
+\item 
+int \mbox{\hyperlink{class_capteurs_aadfcc4c0b1496e567444a2d64e31f3ef}{id}}
+\item 
+bool \mbox{\hyperlink{class_capteurs_ac97df077c4ac38a714750013d1097fb2}{donnees\+Ajoutees}}
+\item 
+bool \mbox{\hyperlink{class_capteurs_abfdfa4e9053cc5f020cb98c8482cf990}{donnees\+ADiffuser}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_capteurs_ae03d33ab8b11d46d1bd8234572486112}{canal}}
+\item 
+QString \mbox{\hyperlink{class_capteurs_ad1f83acf5b9f5ebb1ade4b0a9a6887b6}{donnees}}
+\item 
+QString \mbox{\hyperlink{class_capteurs_a16e53c565e94d08f4c1879dc0aedf905}{modele}}
+\item 
+\mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} \& \mbox{\hyperlink{class_capteurs_a2e943f67e24c83a1d38241cecd7cb63c}{la\+BDD}}
+\item 
+\mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}} \& \mbox{\hyperlink{class_capteurs_ae5e13505406058f7f8ab70836e51b728}{diffusion}}
+\item 
+QTimer \mbox{\hyperlink{class_capteurs_ab57dfa1b9387660842fa522f04eddc89}{delai\+Reception}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_capteurs_a8671286befd36764cfea507f97e1176e}\label{class_capteurs_a8671286befd36764cfea507f97e1176e}} 
+\index{Capteurs@{Capteurs}!Capteurs@{Capteurs}}
+\index{Capteurs@{Capteurs}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{Capteurs()}{Capteurs()}}
+{\footnotesize\ttfamily Capteurs\+::\+Capteurs (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{\+\_\+infos\+Capteur,  }\item[{\mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} \&}]{\+\_\+la\+BDD,  }\item[{\mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}} \&}]{\+\_\+diffusion }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_capteurs_a8671286befd36764cfea507f97e1176e}{Capteurs\+::\+Capteurs}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+infos\+Capteur} & Liste des informations du concernant le capteur\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe, attribut les valeurs concernant le capteur, appelle la classe \mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} et demande la création d\textquotesingle{}un capteur dans la BDD \mbox{\Hypertarget{class_capteurs_a8d0e38fada71279279b2d3938485304b}\label{class_capteurs_a8d0e38fada71279279b2d3938485304b}} 
+\index{Capteurs@{Capteurs}!````~Capteurs@{$\sim$Capteurs}}
+\index{````~Capteurs@{$\sim$Capteurs}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{$\sim$Capteurs()}{~Capteurs()}}
+{\footnotesize\ttfamily Capteurs\+::$\sim$\+Capteurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_capteurs_a8d0e38fada71279279b2d3938485304b}{Capteurs\+::$\sim$\+Capteurs}}. 
+
+Destructeur virtuel de la classe 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_capteurs_a752c3b3116a1c8608501b7e1b5f69375}\label{class_capteurs_a752c3b3116a1c8608501b7e1b5f69375}} 
+\index{Capteurs@{Capteurs}!AjouterDonnees@{AjouterDonnees}}
+\index{AjouterDonnees@{AjouterDonnees}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{AjouterDonnees()}{AjouterDonnees()}}
+{\footnotesize\ttfamily virtual void Capteurs\+::\+Ajouter\+Donnees (\begin{DoxyParamCaption}\item[{const QString \&}]{\+\_\+donnees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{class_w_s2300_a1c6e5d17216c1d64cacc5478e3b2c526}{WS2300}}, et \mbox{\hyperlink{class_capteurs_thermo_hygro_a4cb1346ba4fd4f09e239765cc8403992}{Capteurs\+Thermo\+Hygro}}.
+
+\mbox{\Hypertarget{class_capteurs_a7822cc80bb68a6eecbcde698c67591cd}\label{class_capteurs_a7822cc80bb68a6eecbcde698c67591cd}} 
+\index{Capteurs@{Capteurs}!CalculerMoyenne@{CalculerMoyenne}}
+\index{CalculerMoyenne@{CalculerMoyenne}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{CalculerMoyenne()}{CalculerMoyenne()}}
+{\footnotesize\ttfamily virtual float Capteurs\+::\+Calculer\+Moyenne (\begin{DoxyParamCaption}\item[{const QVector$<$ float $>$ \&}]{\+\_\+tableau }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{class_w_s2300_a517a80ee9f0705663b1999c7dd83ab59}{WS2300}}, et \mbox{\hyperlink{class_capteurs_thermo_hygro_ad5c3bc7abe8e4632a94d3056a5a1e270}{Capteurs\+Thermo\+Hygro}}.
+
+\mbox{\Hypertarget{class_capteurs_a2d5ab495ba8dca889581b96c8878581c}\label{class_capteurs_a2d5ab495ba8dca889581b96c8878581c}} 
+\index{Capteurs@{Capteurs}!DiffuserDonnees@{DiffuserDonnees}}
+\index{DiffuserDonnees@{DiffuserDonnees}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{DiffuserDonnees()}{DiffuserDonnees()}}
+{\footnotesize\ttfamily virtual void Capteurs\+::\+Diffuser\+Donnees (\begin{DoxyParamCaption}\item[{const int \&}]{\+\_\+cle,  }\item[{QString \&}]{\+\_\+donnees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{class_w_s2300_af37a09f9cfab63a29fa28a8a1761b22f}{WS2300}}, et \mbox{\hyperlink{class_capteurs_thermo_hygro_a9ec189e76ff606103eb47ae64be0d527}{Capteurs\+Thermo\+Hygro}}.
+
+\mbox{\Hypertarget{class_capteurs_a4e841d40680093b14148080a10b9adca}\label{class_capteurs_a4e841d40680093b14148080a10b9adca}} 
+\index{Capteurs@{Capteurs}!EnregistrerDonnees@{EnregistrerDonnees}}
+\index{EnregistrerDonnees@{EnregistrerDonnees}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{EnregistrerDonnees()}{EnregistrerDonnees()}}
+{\footnotesize\ttfamily virtual void Capteurs\+::\+Enregistrer\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implémenté dans \mbox{\hyperlink{class_w_s2300_a55609c8857bb2279f0b5266d1c6005dc}{WS2300}}, et \mbox{\hyperlink{class_capteurs_thermo_hygro_abb4fe0fcfc0232615af9c75bad49a000}{Capteurs\+Thermo\+Hygro}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_capteurs_ae03d33ab8b11d46d1bd8234572486112}\label{class_capteurs_ae03d33ab8b11d46d1bd8234572486112}} 
+\index{Capteurs@{Capteurs}!canal@{canal}}
+\index{canal@{canal}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{canal}{canal}}
+{\footnotesize\ttfamily int Capteurs\+::canal\hspace{0.3cm}{\ttfamily [protected]}}
+
+Canal sur lequel le capteur opère \mbox{\Hypertarget{class_capteurs_ab57dfa1b9387660842fa522f04eddc89}\label{class_capteurs_ab57dfa1b9387660842fa522f04eddc89}} 
+\index{Capteurs@{Capteurs}!delaiReception@{delaiReception}}
+\index{delaiReception@{delaiReception}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{delaiReception}{delaiReception}}
+{\footnotesize\ttfamily QTimer Capteurs\+::delai\+Reception\hspace{0.3cm}{\ttfamily [protected]}}
+
+Timer permettant de ne pas traiter plusieurs fois la même trame \mbox{\Hypertarget{class_capteurs_ae5e13505406058f7f8ab70836e51b728}\label{class_capteurs_ae5e13505406058f7f8ab70836e51b728}} 
+\index{Capteurs@{Capteurs}!diffusion@{diffusion}}
+\index{diffusion@{diffusion}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{diffusion}{diffusion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}}\& Capteurs\+::diffusion\hspace{0.3cm}{\ttfamily [protected]}}
+
+Référence du serveur Web\+Socket \mbox{\Hypertarget{class_capteurs_ad1f83acf5b9f5ebb1ade4b0a9a6887b6}\label{class_capteurs_ad1f83acf5b9f5ebb1ade4b0a9a6887b6}} 
+\index{Capteurs@{Capteurs}!donnees@{donnees}}
+\index{donnees@{donnees}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{donnees}{donnees}}
+{\footnotesize\ttfamily QString Capteurs\+::donnees\hspace{0.3cm}{\ttfamily [protected]}}
+
+Liste des données liées au capteur \mbox{\Hypertarget{class_capteurs_abfdfa4e9053cc5f020cb98c8482cf990}\label{class_capteurs_abfdfa4e9053cc5f020cb98c8482cf990}} 
+\index{Capteurs@{Capteurs}!donneesADiffuser@{donneesADiffuser}}
+\index{donneesADiffuser@{donneesADiffuser}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{donneesADiffuser}{donneesADiffuser}}
+{\footnotesize\ttfamily bool Capteurs\+::donnees\+ADiffuser}
+
+Booléan permettant de savoir si il faut diffuser des données \mbox{\Hypertarget{class_capteurs_ac97df077c4ac38a714750013d1097fb2}\label{class_capteurs_ac97df077c4ac38a714750013d1097fb2}} 
+\index{Capteurs@{Capteurs}!donneesAjoutees@{donneesAjoutees}}
+\index{donneesAjoutees@{donneesAjoutees}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{donneesAjoutees}{donneesAjoutees}}
+{\footnotesize\ttfamily bool Capteurs\+::donnees\+Ajoutees}
+
+Booléan permettant de savoir si de nouvelles données ont été ajoutées depuis le dernier enregistremment \mbox{\Hypertarget{class_capteurs_aadfcc4c0b1496e567444a2d64e31f3ef}\label{class_capteurs_aadfcc4c0b1496e567444a2d64e31f3ef}} 
+\index{Capteurs@{Capteurs}!id@{id}}
+\index{id@{id}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Capteurs\+::id}
+
+Id du capteur sur la BDD \mbox{\Hypertarget{class_capteurs_ae0a329c38ce019ece9971387ad0ebd43}\label{class_capteurs_ae0a329c38ce019ece9971387ad0ebd43}} 
+\index{Capteurs@{Capteurs}!idCourant@{idCourant}}
+\index{idCourant@{idCourant}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{idCourant}{idCourant}}
+{\footnotesize\ttfamily int Capteurs\+::id\+Courant}
+
+Id fourni par le capteur \mbox{\Hypertarget{class_capteurs_a2e943f67e24c83a1d38241cecd7cb63c}\label{class_capteurs_a2e943f67e24c83a1d38241cecd7cb63c}} 
+\index{Capteurs@{Capteurs}!laBDD@{laBDD}}
+\index{laBDD@{laBDD}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{laBDD}{laBDD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}}\& Capteurs\+::la\+BDD\hspace{0.3cm}{\ttfamily [protected]}}
+
+Référence de la BDD \mbox{\Hypertarget{class_capteurs_a16e53c565e94d08f4c1879dc0aedf905}\label{class_capteurs_a16e53c565e94d08f4c1879dc0aedf905}} 
+\index{Capteurs@{Capteurs}!modele@{modele}}
+\index{modele@{modele}!Capteurs@{Capteurs}}
+\doxysubsubsection{\texorpdfstring{modele}{modele}}
+{\footnotesize\ttfamily QString Capteurs\+::modele\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nom du capteur 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{capteurs_8h}{capteurs.\+h}}\item 
+\mbox{\hyperlink{capteurs_8cpp}{capteurs.\+cpp}}\end{DoxyCompactItemize}

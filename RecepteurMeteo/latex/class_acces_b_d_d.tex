@@ -1,0 +1,169 @@
+\hypertarget{class_acces_b_d_d}{}\doxysection{Référence de la classe Acces\+BDD}
+\label{class_acces_b_d_d}\index{AccesBDD@{AccesBDD}}
+
+
+{\ttfamily \#include $<$accesbdd.\+h$>$}
+
+
+
+Graphe de collaboration de Acces\+BDD\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{class_acces_b_d_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_acces_b_d_d_ac18e4e4826b62ea34296cb09ad1263b9}{Acces\+BDD}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_acces_b_d_d_ac18e4e4826b62ea34296cb09ad1263b9}{Acces\+BDD\+::\+Acces\+BDD}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_acces_b_d_d_a37345bf212936b5ac471a5216181b67a}{Ajouter\+Capteur}} (const int \+\_\+id\+Courant, const int \+\_\+canal, const QString \+\_\+modele, int \&\+\_\+id)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_acces_b_d_d_a37345bf212936b5ac471a5216181b67a}{Acces\+BDD\+::\+Ajouter\+Capteur}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_acces_b_d_d_ac77deaf8df40e3d33fc20c4d44d31db8}{Enregistrer\+Temperature\+Hygro}} (const QString\+List \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_acces_b_d_d_ac77deaf8df40e3d33fc20c4d44d31db8}{Acces\+BDD\+::\+Enregistrer\+Temperature\+Hygro}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_acces_b_d_d_aca4f3e08e99e0121e6f70f8080825500}{Enregistrer\+Vent}} (const QString\+List \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_acces_b_d_d_aca4f3e08e99e0121e6f70f8080825500}{Acces\+BDD\+::\+Enregistrer\+Vent}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_acces_b_d_d_a8c803b0b60dd5349f983f0f158a24ec8}{Enregistrer\+Precipitation}} (const QString\+List \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_acces_b_d_d_a8c803b0b60dd5349f983f0f158a24ec8}{Acces\+BDD\+::\+Enregistrer\+Precipitation}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_acces_b_d_d_a26849ef9a74c2d284216a5be6f55a438}{Get\+Id}} (const int \+\_\+id\+Courant)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_acces_b_d_d_a26849ef9a74c2d284216a5be6f55a438}{Acces\+BDD\+::\+Get\+Id}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+QSql\+Database \mbox{\hyperlink{class_acces_b_d_d_af0b62788e8a8eb8379e5196c471e4bbb}{db}}
+\item 
+QSettings $\ast$ \mbox{\hyperlink{class_acces_b_d_d_ac364ee5ca756aab9b16dd698c6a8ab86}{fichier\+INI}}
+\item 
+QSql\+Query $\ast$ \mbox{\hyperlink{class_acces_b_d_d_adc4355cc228a58989f65dbf803f996df}{requete}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_acces_b_d_d_ac18e4e4826b62ea34296cb09ad1263b9}\label{class_acces_b_d_d_ac18e4e4826b62ea34296cb09ad1263b9}} 
+\index{AccesBDD@{AccesBDD}!AccesBDD@{AccesBDD}}
+\index{AccesBDD@{AccesBDD}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{AccesBDD()}{AccesBDD()}}
+{\footnotesize\ttfamily Acces\+BDD\+::\+Acces\+BDD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_acces_b_d_d_ac18e4e4826b62ea34296cb09ad1263b9}{Acces\+BDD\+::\+Acces\+BDD}}. 
+
+Constructeur de la classe, ouvre le fichier contenant les informations de la BDD et ouvre la connexion à la BDD 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_acces_b_d_d_a37345bf212936b5ac471a5216181b67a}\label{class_acces_b_d_d_a37345bf212936b5ac471a5216181b67a}} 
+\index{AccesBDD@{AccesBDD}!AjouterCapteur@{AjouterCapteur}}
+\index{AjouterCapteur@{AjouterCapteur}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{AjouterCapteur()}{AjouterCapteur()}}
+{\footnotesize\ttfamily bool Acces\+BDD\+::\+Ajouter\+Capteur (\begin{DoxyParamCaption}\item[{const int}]{\+\_\+id\+Courant,  }\item[{const int}]{\+\_\+canal,  }\item[{const QString}]{\+\_\+modele,  }\item[{int \&}]{\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_acces_b_d_d_a37345bf212936b5ac471a5216181b67a}{Acces\+BDD\+::\+Ajouter\+Capteur}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+id\+Courant} & ID fourni par le capteur permettant son identification \\
+\hline
+{\em \+\_\+canal} & Canal sur lequel opère le capteur \\
+\hline
+{\em \+\_\+modele} & Modèle du capteur permettant son identification \\
+\hline
+{\em \+\_\+id} & Id liée au capteur, il est créé par la BDD et est définitif \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne un booléen permettant de confirmer l\textquotesingle{}ajout du capteur dans la BDD
+\end{DoxyReturn}
+Permet l\textquotesingle{}Ajout d\textquotesingle{}un capteur dans la BDD ou la modification de son id\+Courant si celui à changer \mbox{\Hypertarget{class_acces_b_d_d_a8c803b0b60dd5349f983f0f158a24ec8}\label{class_acces_b_d_d_a8c803b0b60dd5349f983f0f158a24ec8}} 
+\index{AccesBDD@{AccesBDD}!EnregistrerPrecipitation@{EnregistrerPrecipitation}}
+\index{EnregistrerPrecipitation@{EnregistrerPrecipitation}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{EnregistrerPrecipitation()}{EnregistrerPrecipitation()}}
+{\footnotesize\ttfamily void Acces\+BDD\+::\+Enregistrer\+Precipitation (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{\+\_\+donnees }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_acces_b_d_d_a8c803b0b60dd5349f983f0f158a24ec8}{Acces\+BDD\+::\+Enregistrer\+Precipitation}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+donnees} & Liste des données (precipitations) à enregistrer dans la table precipitation de la BDD\\
+\hline
+\end{DoxyParams}
+Enregistre les valeurs fournies dans la table precipitation \mbox{\Hypertarget{class_acces_b_d_d_ac77deaf8df40e3d33fc20c4d44d31db8}\label{class_acces_b_d_d_ac77deaf8df40e3d33fc20c4d44d31db8}} 
+\index{AccesBDD@{AccesBDD}!EnregistrerTemperatureHygro@{EnregistrerTemperatureHygro}}
+\index{EnregistrerTemperatureHygro@{EnregistrerTemperatureHygro}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{EnregistrerTemperatureHygro()}{EnregistrerTemperatureHygro()}}
+{\footnotesize\ttfamily void Acces\+BDD\+::\+Enregistrer\+Temperature\+Hygro (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{\+\_\+donnees }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_acces_b_d_d_ac77deaf8df40e3d33fc20c4d44d31db8}{Acces\+BDD\+::\+Enregistrer\+Temperature\+Hygro}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+donnees} & Liste des données (température et hygrométrie) à inscrire dans la table temperature de la BDD\\
+\hline
+\end{DoxyParams}
+Enregistre les valeurs fournies dans la table temperature \mbox{\Hypertarget{class_acces_b_d_d_aca4f3e08e99e0121e6f70f8080825500}\label{class_acces_b_d_d_aca4f3e08e99e0121e6f70f8080825500}} 
+\index{AccesBDD@{AccesBDD}!EnregistrerVent@{EnregistrerVent}}
+\index{EnregistrerVent@{EnregistrerVent}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{EnregistrerVent()}{EnregistrerVent()}}
+{\footnotesize\ttfamily void Acces\+BDD\+::\+Enregistrer\+Vent (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{\+\_\+donnees }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_acces_b_d_d_aca4f3e08e99e0121e6f70f8080825500}{Acces\+BDD\+::\+Enregistrer\+Vent}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+donnees} & Liste des données (direction, vitesse moyenne et vitesse maximal du vent) à enregistrer dans la table wind de la BDD\\
+\hline
+\end{DoxyParams}
+Enregistre les valeurs fournies dans la table wind \mbox{\Hypertarget{class_acces_b_d_d_a26849ef9a74c2d284216a5be6f55a438}\label{class_acces_b_d_d_a26849ef9a74c2d284216a5be6f55a438}} 
+\index{AccesBDD@{AccesBDD}!GetId@{GetId}}
+\index{GetId@{GetId}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily int Acces\+BDD\+::\+Get\+Id (\begin{DoxyParamCaption}\item[{const int}]{\+\_\+id\+Courant }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_acces_b_d_d_a26849ef9a74c2d284216a5be6f55a438}{Acces\+BDD\+::\+Get\+Id}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+id\+Courant} & ID fourni par le capteur permettant son identification \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne un entier correspondant à la valeur de l\textquotesingle{}id fourni par la BDD
+\end{DoxyReturn}
+Trouve et retourne l\textquotesingle{}id présent dans la BDD à l\textquotesingle{}aide de l\textquotesingle{}id courant 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_acces_b_d_d_af0b62788e8a8eb8379e5196c471e4bbb}\label{class_acces_b_d_d_af0b62788e8a8eb8379e5196c471e4bbb}} 
+\index{AccesBDD@{AccesBDD}!db@{db}}
+\index{db@{db}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily QSql\+Database Acces\+BDD\+::db\hspace{0.3cm}{\ttfamily [private]}}
+
+Instance de la BDD \mbox{\Hypertarget{class_acces_b_d_d_ac364ee5ca756aab9b16dd698c6a8ab86}\label{class_acces_b_d_d_ac364ee5ca756aab9b16dd698c6a8ab86}} 
+\index{AccesBDD@{AccesBDD}!fichierINI@{fichierINI}}
+\index{fichierINI@{fichierINI}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{fichierINI}{fichierINI}}
+{\footnotesize\ttfamily QSettings$\ast$ Acces\+BDD\+::fichier\+INI\hspace{0.3cm}{\ttfamily [private]}}
+
+Fichier contenant les informations de la BDD \mbox{\Hypertarget{class_acces_b_d_d_adc4355cc228a58989f65dbf803f996df}\label{class_acces_b_d_d_adc4355cc228a58989f65dbf803f996df}} 
+\index{AccesBDD@{AccesBDD}!requete@{requete}}
+\index{requete@{requete}!AccesBDD@{AccesBDD}}
+\doxysubsubsection{\texorpdfstring{requete}{requete}}
+{\footnotesize\ttfamily QSql\+Query$\ast$ Acces\+BDD\+::requete\hspace{0.3cm}{\ttfamily [private]}}
+
+Requête qui servira dans la gestion de la BDD 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{accesbdd_8h}{accesbdd.\+h}}\item 
+\mbox{\hyperlink{accesbdd_8cpp}{accesbdd.\+cpp}}\end{DoxyCompactItemize}

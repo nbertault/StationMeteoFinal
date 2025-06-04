@@ -1,0 +1,8 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,76,108"/>
+<area shape="rect" id="node2" href="$class_capteurs.html" title=" " alt="" coords="146,31,221,57"/>
+<area shape="rect" id="node5" href="$class_diffuseur_meteo.html" title=" " alt="" coords="128,81,239,108"/>
+<area shape="rect" id="node6" href="$class_recepteur_meteo.html" title=" " alt="" coords="124,132,243,159"/>
+<area shape="rect" id="node3" href="$class_capteurs_thermo_hygro.html" title=" " alt="" coords="291,5,445,32"/>
+<area shape="rect" id="node4" href="$class_w_s2300.html" title=" " alt="" coords="332,56,404,83"/>
+</map>

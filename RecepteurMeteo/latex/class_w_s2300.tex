@@ -1,0 +1,253 @@
+\hypertarget{class_w_s2300}{}\doxysection{Référence de la classe WS2300}
+\label{class_w_s2300}\index{WS2300@{WS2300}}
+
+
+{\ttfamily \#include $<$ws2300.\+h$>$}
+
+
+
+Graphe de collaboration de WS2300\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_w_s2300__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s2300_a3d7eab4f66b4e41bf0298607d4a5d447}{WS2300}} (QString \&\+\_\+liste\+Donnees, const QString\+List \&\+\_\+infos\+Capteur, \mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} \&\+\_\+la\+BDD, \mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}} \&\+\_\+diffusion)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_w_s2300_a3d7eab4f66b4e41bf0298607d4a5d447}{WS2300\+::\+WS2300}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_w_s2300_a48d319506051df08e679c01ad9668518}{$\sim$\+WS2300}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_w_s2300_a48d319506051df08e679c01ad9668518}{WS2300\+::$\sim$\+WS2300}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_s2300_a1c6e5d17216c1d64cacc5478e3b2c526}{Ajouter\+Donnees}} (const QString \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_w_s2300_a1c6e5d17216c1d64cacc5478e3b2c526}{WS2300\+::\+Ajouter\+Donnees}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_s2300_a55609c8857bb2279f0b5266d1c6005dc}{Enregistrer\+Donnees}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_w_s2300_a55609c8857bb2279f0b5266d1c6005dc}{WS2300\+::\+Enregistrer\+Donnees}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_w_s2300_a517a80ee9f0705663b1999c7dd83ab59}{Calculer\+Moyenne}} (const QVector$<$ float $>$ \&\+\_\+tableau)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_capteurs_thermo_hygro_ad5c3bc7abe8e4632a94d3056a5a1e270}{Capteurs\+Thermo\+Hygro\+::\+Calculer\+Moyenne}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_w_s2300_af37a09f9cfab63a29fa28a8a1761b22f}{Diffuser\+Donnees}} (const int \&\+\_\+cle, QString \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_capteurs_thermo_hygro_a9ec189e76ff606103eb47ae64be0d527}{Capteurs\+Thermo\+Hygro\+::\+Diffuser\+Donnees}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_w_s2300_a1cbe8a63ae8529239e59d57fa0657aea}{Calculer\+Precipitations\+Demi\+Heure}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_w_s2300_a1cbe8a63ae8529239e59d57fa0657aea}{WS2300\+::\+Calculer\+Precipitations\+Demi\+Heure}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_w_s2300_ab129248526288767596e87d68e5251cf}{Calculer\+Precipitations}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_w_s2300_ab129248526288767596e87d68e5251cf}{WS2300\+::\+Calculer\+Precipitations}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_w_s2300_a5c858b53c8ba803a84a0d1897100a5e4}{vent\+Max}}
+\item 
+float \mbox{\hyperlink{class_w_s2300_a3c162f24eeb2e4166e56da07ed94dbe2}{nouvelles\+Precipitations}}
+\item 
+float \mbox{\hyperlink{class_w_s2300_a09140e045bbd587b11b1661ba09466e9}{precipitations\+Derniere\+Demi\+Heure}}
+\item 
+float \mbox{\hyperlink{class_w_s2300_afbb013a1084c59cb5ebdb95d15d0e246}{precipitations\+Precedentes}}
+\item 
+QVector$<$ float $>$ \mbox{\hyperlink{class_w_s2300_ad2d54263dc8b659e55b5c15f4639fd89}{tableau\+Temperature}}
+\item 
+QVector$<$ float $>$ \mbox{\hyperlink{class_w_s2300_af32dfc8237146ddfbdade0e3a28801fe}{tableau\+Vent\+Moy}}
+\item 
+QVector$<$ float $>$ \mbox{\hyperlink{class_w_s2300_a91572d3936cf19c24bc5b9c0c604d66b}{tableau\+Humidite}}
+\item 
+QVector$<$ float $>$ \mbox{\hyperlink{class_w_s2300_ac963d2c5567c9575de3b3d374901bf2a}{tableau\+Direction\+Vent}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_w_s2300_a3d7eab4f66b4e41bf0298607d4a5d447}\label{class_w_s2300_a3d7eab4f66b4e41bf0298607d4a5d447}} 
+\index{WS2300@{WS2300}!WS2300@{WS2300}}
+\index{WS2300@{WS2300}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{WS2300()}{WS2300()}}
+{\footnotesize\ttfamily WS2300\+::\+WS2300 (\begin{DoxyParamCaption}\item[{QString \&}]{\+\_\+liste\+Donnees,  }\item[{const QString\+List \&}]{\+\_\+infos\+Capteur,  }\item[{\mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} \&}]{\+\_\+la\+BDD,  }\item[{\mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}} \&}]{\+\_\+diffusion }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_w_s2300_a3d7eab4f66b4e41bf0298607d4a5d447}{WS2300\+::\+WS2300}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+liste\+Donnees} & Liste des données fournies par le capteur \\
+\hline
+{\em \+\_\+infos\+Capteur} & Liste des informations concernant le capteur \\
+\hline
+{\em \+\_\+la\+BDD} & Pointeur permettant un accès constant à la BDD \\
+\hline
+{\em \+\_\+diffusion} & Pointeur permettant un accès constant au serveur Web\+Socket\\
+\hline
+\end{DoxyParams}
+Constructeur de la classe, ajoute les premières données aux tableaux et attribut les paramètre à la classe virtuel \mbox{\hyperlink{class_capteurs}{Capteurs}} \mbox{\Hypertarget{class_w_s2300_a48d319506051df08e679c01ad9668518}\label{class_w_s2300_a48d319506051df08e679c01ad9668518}} 
+\index{WS2300@{WS2300}!````~WS2300@{$\sim$WS2300}}
+\index{````~WS2300@{$\sim$WS2300}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{$\sim$WS2300()}{~WS2300()}}
+{\footnotesize\ttfamily WS2300\+::$\sim$\+WS2300 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_w_s2300_a48d319506051df08e679c01ad9668518}{WS2300\+::$\sim$\+WS2300}}. 
+
+Destructeur de la classe 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_w_s2300_a1c6e5d17216c1d64cacc5478e3b2c526}\label{class_w_s2300_a1c6e5d17216c1d64cacc5478e3b2c526}} 
+\index{WS2300@{WS2300}!AjouterDonnees@{AjouterDonnees}}
+\index{AjouterDonnees@{AjouterDonnees}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{AjouterDonnees()}{AjouterDonnees()}}
+{\footnotesize\ttfamily void WS2300\+::\+Ajouter\+Donnees (\begin{DoxyParamCaption}\item[{const QString \&}]{\+\_\+donnees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_w_s2300_a1c6e5d17216c1d64cacc5478e3b2c526}{WS2300\+::\+Ajouter\+Donnees}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+donnees} & Liste des données à ajouter aux tableaux\\
+\hline
+\end{DoxyParams}
+Fonction virtuel, permet l\textquotesingle{}ajout de nouvelles données dans les tableaux 
+
+Implémente \mbox{\hyperlink{class_capteurs_a752c3b3116a1c8608501b7e1b5f69375}{Capteurs}}.
+
+\mbox{\Hypertarget{class_w_s2300_a517a80ee9f0705663b1999c7dd83ab59}\label{class_w_s2300_a517a80ee9f0705663b1999c7dd83ab59}} 
+\index{WS2300@{WS2300}!CalculerMoyenne@{CalculerMoyenne}}
+\index{CalculerMoyenne@{CalculerMoyenne}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{CalculerMoyenne()}{CalculerMoyenne()}}
+{\footnotesize\ttfamily float WS2300\+::\+Calculer\+Moyenne (\begin{DoxyParamCaption}\item[{const QVector$<$ float $>$ \&}]{\+\_\+tableau }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_capteurs_thermo_hygro_ad5c3bc7abe8e4632a94d3056a5a1e270}{Capteurs\+Thermo\+Hygro\+::\+Calculer\+Moyenne}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+tableau} & Tableau contenenant les données \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne un floattant étant la moyenne de la totalité des données dans le tableau
+\end{DoxyReturn}
+Fonction virtuel, permet le calcul de la moyenne des données d\textquotesingle{}un tableau 
+
+Implémente \mbox{\hyperlink{class_capteurs_a7822cc80bb68a6eecbcde698c67591cd}{Capteurs}}.
+
+\mbox{\Hypertarget{class_w_s2300_ab129248526288767596e87d68e5251cf}\label{class_w_s2300_ab129248526288767596e87d68e5251cf}} 
+\index{WS2300@{WS2300}!CalculerPrecipitations@{CalculerPrecipitations}}
+\index{CalculerPrecipitations@{CalculerPrecipitations}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{CalculerPrecipitations()}{CalculerPrecipitations()}}
+{\footnotesize\ttfamily float WS2300\+::\+Calculer\+Precipitations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_w_s2300_ab129248526288767596e87d68e5251cf}{WS2300\+::\+Calculer\+Precipitations}}. 
+
+\begin{DoxyReturn}{Renvoie}
+Retourne la valeur des précipitations à partir des attributs de la classe
+\end{DoxyReturn}
+Calcul la précipitation en fonction de l\textquotesingle{}ancienne valeur totale \mbox{\Hypertarget{class_w_s2300_a1cbe8a63ae8529239e59d57fa0657aea}\label{class_w_s2300_a1cbe8a63ae8529239e59d57fa0657aea}} 
+\index{WS2300@{WS2300}!CalculerPrecipitationsDemiHeure@{CalculerPrecipitationsDemiHeure}}
+\index{CalculerPrecipitationsDemiHeure@{CalculerPrecipitationsDemiHeure}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{CalculerPrecipitationsDemiHeure()}{CalculerPrecipitationsDemiHeure()}}
+{\footnotesize\ttfamily float WS2300\+::\+Calculer\+Precipitations\+Demi\+Heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_w_s2300_a1cbe8a63ae8529239e59d57fa0657aea}{WS2300\+::\+Calculer\+Precipitations\+Demi\+Heure}}. 
+
+\begin{DoxyReturn}{Renvoie}
+Retourne la valeur des précipitations sur une demi-\/heure à partir des attributs de la classe
+\end{DoxyReturn}
+Calcul la précipitation en fonction de l\textquotesingle{}ancienne valeur totale \mbox{\Hypertarget{class_w_s2300_af37a09f9cfab63a29fa28a8a1761b22f}\label{class_w_s2300_af37a09f9cfab63a29fa28a8a1761b22f}} 
+\index{WS2300@{WS2300}!DiffuserDonnees@{DiffuserDonnees}}
+\index{DiffuserDonnees@{DiffuserDonnees}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{DiffuserDonnees()}{DiffuserDonnees()}}
+{\footnotesize\ttfamily void WS2300\+::\+Diffuser\+Donnees (\begin{DoxyParamCaption}\item[{const int \&}]{\+\_\+cle,  }\item[{QString \&}]{\+\_\+donnees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_capteurs_thermo_hygro_a9ec189e76ff606103eb47ae64be0d527}{Capteurs\+Thermo\+Hygro\+::\+Diffuser\+Donnees}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+cle} & Clé attribué par la classe recepteur météo permettant l\textquotesingle{}identification des capteurs par les clients Web\+Socket \\
+\hline
+{\em \+\_\+donnees} & Liste des données à diffuser aux clients Web\+Socket\\
+\hline
+\end{DoxyParams}
+Fonction virtuel, permet la diffusion des données grâce au serveur Web\+Socket 
+
+Implémente \mbox{\hyperlink{class_capteurs_a2d5ab495ba8dca889581b96c8878581c}{Capteurs}}.
+
+\mbox{\Hypertarget{class_w_s2300_a55609c8857bb2279f0b5266d1c6005dc}\label{class_w_s2300_a55609c8857bb2279f0b5266d1c6005dc}} 
+\index{WS2300@{WS2300}!EnregistrerDonnees@{EnregistrerDonnees}}
+\index{EnregistrerDonnees@{EnregistrerDonnees}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{EnregistrerDonnees()}{EnregistrerDonnees()}}
+{\footnotesize\ttfamily void WS2300\+::\+Enregistrer\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_w_s2300_a55609c8857bb2279f0b5266d1c6005dc}{WS2300\+::\+Enregistrer\+Donnees}}. 
+
+Fonction virtuel, permet l\textquotesingle{}enregistrement des données dans la BDD 
+
+Implémente \mbox{\hyperlink{class_capteurs_a4e841d40680093b14148080a10b9adca}{Capteurs}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_w_s2300_a3c162f24eeb2e4166e56da07ed94dbe2}\label{class_w_s2300_a3c162f24eeb2e4166e56da07ed94dbe2}} 
+\index{WS2300@{WS2300}!nouvellesPrecipitations@{nouvellesPrecipitations}}
+\index{nouvellesPrecipitations@{nouvellesPrecipitations}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{nouvellesPrecipitations}{nouvellesPrecipitations}}
+{\footnotesize\ttfamily float WS2300\+::nouvelles\+Precipitations\hspace{0.3cm}{\ttfamily [private]}}
+
+Dernière précipitation reçue \mbox{\Hypertarget{class_w_s2300_a09140e045bbd587b11b1661ba09466e9}\label{class_w_s2300_a09140e045bbd587b11b1661ba09466e9}} 
+\index{WS2300@{WS2300}!precipitationsDerniereDemiHeure@{precipitationsDerniereDemiHeure}}
+\index{precipitationsDerniereDemiHeure@{precipitationsDerniereDemiHeure}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{precipitationsDerniereDemiHeure}{precipitationsDerniereDemiHeure}}
+{\footnotesize\ttfamily float WS2300\+::precipitations\+Derniere\+Demi\+Heure\hspace{0.3cm}{\ttfamily [private]}}
+
+Première précipitation reçue lors de la dernière demie-\/heure \mbox{\Hypertarget{class_w_s2300_afbb013a1084c59cb5ebdb95d15d0e246}\label{class_w_s2300_afbb013a1084c59cb5ebdb95d15d0e246}} 
+\index{WS2300@{WS2300}!precipitationsPrecedentes@{precipitationsPrecedentes}}
+\index{precipitationsPrecedentes@{precipitationsPrecedentes}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{precipitationsPrecedentes}{precipitationsPrecedentes}}
+{\footnotesize\ttfamily float WS2300\+::precipitations\+Precedentes\hspace{0.3cm}{\ttfamily [private]}}
+
+Précipitation reçue précédemment \mbox{\Hypertarget{class_w_s2300_ac963d2c5567c9575de3b3d374901bf2a}\label{class_w_s2300_ac963d2c5567c9575de3b3d374901bf2a}} 
+\index{WS2300@{WS2300}!tableauDirectionVent@{tableauDirectionVent}}
+\index{tableauDirectionVent@{tableauDirectionVent}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{tableauDirectionVent}{tableauDirectionVent}}
+{\footnotesize\ttfamily QVector$<$float$>$ WS2300\+::tableau\+Direction\+Vent\hspace{0.3cm}{\ttfamily [private]}}
+
+Tableau regroupant les valeurs de direction du vent \mbox{\Hypertarget{class_w_s2300_a91572d3936cf19c24bc5b9c0c604d66b}\label{class_w_s2300_a91572d3936cf19c24bc5b9c0c604d66b}} 
+\index{WS2300@{WS2300}!tableauHumidite@{tableauHumidite}}
+\index{tableauHumidite@{tableauHumidite}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{tableauHumidite}{tableauHumidite}}
+{\footnotesize\ttfamily QVector$<$float$>$ WS2300\+::tableau\+Humidite\hspace{0.3cm}{\ttfamily [private]}}
+
+Tableau regroupant les valeurs d\textquotesingle{}humidité \mbox{\Hypertarget{class_w_s2300_ad2d54263dc8b659e55b5c15f4639fd89}\label{class_w_s2300_ad2d54263dc8b659e55b5c15f4639fd89}} 
+\index{WS2300@{WS2300}!tableauTemperature@{tableauTemperature}}
+\index{tableauTemperature@{tableauTemperature}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{tableauTemperature}{tableauTemperature}}
+{\footnotesize\ttfamily QVector$<$float$>$ WS2300\+::tableau\+Temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+Tableau regroupant les valeurs de température \mbox{\Hypertarget{class_w_s2300_af32dfc8237146ddfbdade0e3a28801fe}\label{class_w_s2300_af32dfc8237146ddfbdade0e3a28801fe}} 
+\index{WS2300@{WS2300}!tableauVentMoy@{tableauVentMoy}}
+\index{tableauVentMoy@{tableauVentMoy}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{tableauVentMoy}{tableauVentMoy}}
+{\footnotesize\ttfamily QVector$<$float$>$ WS2300\+::tableau\+Vent\+Moy\hspace{0.3cm}{\ttfamily [private]}}
+
+Tableau regroupant les valeurs moyennes de la vitesse du vent \mbox{\Hypertarget{class_w_s2300_a5c858b53c8ba803a84a0d1897100a5e4}\label{class_w_s2300_a5c858b53c8ba803a84a0d1897100a5e4}} 
+\index{WS2300@{WS2300}!ventMax@{ventMax}}
+\index{ventMax@{ventMax}!WS2300@{WS2300}}
+\doxysubsubsection{\texorpdfstring{ventMax}{ventMax}}
+{\footnotesize\ttfamily float WS2300\+::vent\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+Flottant définnissant la vitesse maximal atteinte par le vent dans un certain interval 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ws2300_8h}{ws2300.\+h}}\item 
+\mbox{\hyperlink{ws2300_8cpp}{ws2300.\+cpp}}\end{DoxyCompactItemize}

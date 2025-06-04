@@ -1,0 +1,243 @@
+\hypertarget{class_recepteur_meteo}{}\doxysection{Référence de la classe Recepteur\+Meteo}
+\label{class_recepteur_meteo}\index{RecepteurMeteo@{RecepteurMeteo}}
+
+
+{\ttfamily \#include $<$recepteurmeteo.\+h$>$}
+
+
+
+Graphe de collaboration de Recepteur\+Meteo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recepteur_meteo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_recepteur_meteo_a7951a46e2b977359683c9d0e967d48ef}{Recepteur\+Meteo}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a7951a46e2b977359683c9d0e967d48ef}{Recepteur\+Meteo\+::\+Recepteur\+Meteo}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_recepteur_meteo_aa863b2bb35447c395156c24cfab004bf}{$\sim$\+Recepteur\+Meteo}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_aa863b2bb35447c395156c24cfab004bf}{Recepteur\+Meteo\+::$\sim$\+Recepteur\+Meteo}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recepteur_meteo_a10bb83c8b27e8b5f61c02b4fbbf0f332}{Traiter\+Trame}} (const QJson\+Document \+\_\+trame\+Recue)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a10bb83c8b27e8b5f61c02b4fbbf0f332}{Recepteur\+Meteo\+::\+Traiter\+Trame}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1}{Type\+Capteurs}} \mbox{\hyperlink{class_recepteur_meteo_a395bc97a18d16b64fcd5cf73d8dc7283}{Trouver\+Capteur}} (const QString \+\_\+capteur)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a395bc97a18d16b64fcd5cf73d8dc7283}{Recepteur\+Meteo\+::\+Trouver\+Capteur}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recepteur_meteo_a333be8d8f7dd8d033ef40f4b6fd8c4ed}{Calculer\+Delai\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a333be8d8f7dd8d033ef40f4b6fd8c4ed}{Recepteur\+Meteo\+::\+Calculer\+Delai\+Timer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1}{Type\+Capteurs}} \{ \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a31a49535a415933fb60225882b591d43}{FINEOFFSET}}
+, \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a2428ff994af885a09aba60368c0b2028}{NEXUS}}
+, \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a9118c2b17c661df9d2ca1327ca1e80c5}{OREGON}}
+, \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a7251aea5938214a5cbd24cdefc483a03}{AUTRE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_recepteur_meteo_a2f3980edd26e0037047006fac557df00}{read\+Output}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a2f3980edd26e0037047006fac557df00}{Recepteur\+Meteo\+::read\+Output}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recepteur_meteo_a870aa4b1c557f60a07267a1a007b48b6}{on\+Started}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a870aa4b1c557f60a07267a1a007b48b6}{Recepteur\+Meteo\+::on\+Started}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recepteur_meteo_aaa59e4d7cea6c64a5c0f9b592274076d}{on\+Finished}} (int exit\+Code, QProcess\+::\+Exit\+Status exit\+Status)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_aaa59e4d7cea6c64a5c0f9b592274076d}{Recepteur\+Meteo\+::on\+Finished}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_recepteur_meteo_a9f80ef7184e34522c0e8acf96690949c}{on\+Timer\+\_\+timeout}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_recepteur_meteo_a9f80ef7184e34522c0e8acf96690949c}{Recepteur\+Meteo\+::on\+Timer\+\_\+timeout}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+QProcess $\ast$ \mbox{\hyperlink{class_recepteur_meteo_a401273e9902febb504c02eccf4ddf7d5}{process}}
+\item 
+QMap$<$ int, \mbox{\hyperlink{class_capteurs}{Capteurs}} $\ast$ $>$ \mbox{\hyperlink{class_recepteur_meteo_a368ea1b9289dd0e04fde335c42f3e440}{capteurs}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_recepteur_meteo_a40f3c4f59c90c7b0090aec2cc4b29d22}{timer}}
+\item 
+\mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}} $\ast$ \mbox{\hyperlink{class_recepteur_meteo_a8ded0abd00d50cacd4a186b4e10678ec}{diffusion}}
+\item 
+\mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}} $\ast$ \mbox{\hyperlink{class_recepteur_meteo_a1b79969137bc88869aec022b1ccc2100}{bd}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1}\label{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!TypeCapteurs@{TypeCapteurs}}
+\index{TypeCapteurs@{TypeCapteurs}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{TypeCapteurs}{TypeCapteurs}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1}{Recepteur\+Meteo\+::\+Type\+Capteurs}}\hspace{0.3cm}{\ttfamily [private]}}
+
+Enumération des différents type de capteurs \begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FINEOFFSET@{FINEOFFSET}!RecepteurMeteo@{RecepteurMeteo}}\index{RecepteurMeteo@{RecepteurMeteo}!FINEOFFSET@{FINEOFFSET}}}\mbox{\Hypertarget{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a31a49535a415933fb60225882b591d43}\label{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a31a49535a415933fb60225882b591d43}} 
+FINEOFFSET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEXUS@{NEXUS}!RecepteurMeteo@{RecepteurMeteo}}\index{RecepteurMeteo@{RecepteurMeteo}!NEXUS@{NEXUS}}}\mbox{\Hypertarget{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a2428ff994af885a09aba60368c0b2028}\label{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a2428ff994af885a09aba60368c0b2028}} 
+NEXUS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OREGON@{OREGON}!RecepteurMeteo@{RecepteurMeteo}}\index{RecepteurMeteo@{RecepteurMeteo}!OREGON@{OREGON}}}\mbox{\Hypertarget{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a9118c2b17c661df9d2ca1327ca1e80c5}\label{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a9118c2b17c661df9d2ca1327ca1e80c5}} 
+OREGON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUTRE@{AUTRE}!RecepteurMeteo@{RecepteurMeteo}}\index{RecepteurMeteo@{RecepteurMeteo}!AUTRE@{AUTRE}}}\mbox{\Hypertarget{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a7251aea5938214a5cbd24cdefc483a03}\label{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1a7251aea5938214a5cbd24cdefc483a03}} 
+AUTRE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_recepteur_meteo_a7951a46e2b977359683c9d0e967d48ef}\label{class_recepteur_meteo_a7951a46e2b977359683c9d0e967d48ef}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!RecepteurMeteo@{RecepteurMeteo}}
+\index{RecepteurMeteo@{RecepteurMeteo}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{RecepteurMeteo()}{RecepteurMeteo()}}
+{\footnotesize\ttfamily Recepteur\+Meteo\+::\+Recepteur\+Meteo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a7951a46e2b977359683c9d0e967d48ef}{Recepteur\+Meteo\+::\+Recepteur\+Meteo}}. 
+
+Constructeur de la classe permet l\textquotesingle{}initalisation du timer, le lancement du programme RTL\+\_\+433, la connection des signaux, la connection aux autres classes et l\textquotesingle{}initialisation des capteurs \mbox{\Hypertarget{class_recepteur_meteo_aa863b2bb35447c395156c24cfab004bf}\label{class_recepteur_meteo_aa863b2bb35447c395156c24cfab004bf}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!````~RecepteurMeteo@{$\sim$RecepteurMeteo}}
+\index{````~RecepteurMeteo@{$\sim$RecepteurMeteo}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{$\sim$RecepteurMeteo()}{~RecepteurMeteo()}}
+{\footnotesize\ttfamily Recepteur\+Meteo\+::$\sim$\+Recepteur\+Meteo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_aa863b2bb35447c395156c24cfab004bf}{Recepteur\+Meteo\+::$\sim$\+Recepteur\+Meteo}}. 
+
+Destructeur de la classe 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_recepteur_meteo_a333be8d8f7dd8d033ef40f4b6fd8c4ed}\label{class_recepteur_meteo_a333be8d8f7dd8d033ef40f4b6fd8c4ed}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!CalculerDelaiTimer@{CalculerDelaiTimer}}
+\index{CalculerDelaiTimer@{CalculerDelaiTimer}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{CalculerDelaiTimer()}{CalculerDelaiTimer()}}
+{\footnotesize\ttfamily void Recepteur\+Meteo\+::\+Calculer\+Delai\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a333be8d8f7dd8d033ef40f4b6fd8c4ed}{Recepteur\+Meteo\+::\+Calculer\+Delai\+Timer}}. 
+
+Calcul et démarre le timer en fonction de l\textquotesingle{}heure actuelle, le timer doit se lancer toutes les demi-\/heures \mbox{\Hypertarget{class_recepteur_meteo_aaa59e4d7cea6c64a5c0f9b592274076d}\label{class_recepteur_meteo_aaa59e4d7cea6c64a5c0f9b592274076d}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!onFinished@{onFinished}}
+\index{onFinished@{onFinished}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{onFinished}{onFinished}}
+{\footnotesize\ttfamily void Recepteur\+Meteo\+::on\+Finished (\begin{DoxyParamCaption}\item[{int}]{exit\+Code,  }\item[{QProcess\+::\+Exit\+Status}]{exit\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_aaa59e4d7cea6c64a5c0f9b592274076d}{Recepteur\+Meteo\+::on\+Finished}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em exit\+Code} & Code erreur permettant l\textquotesingle{}identification de la raison de l\textquotesingle{}arrêt \\
+\hline
+{\em exit\+Status} & Statut du programme identifiant la raison de son arrêt\\
+\hline
+\end{DoxyParams}
+Informe de l\textquotesingle{}arrêt du programme RTL\+\_\+433 \mbox{\Hypertarget{class_recepteur_meteo_a870aa4b1c557f60a07267a1a007b48b6}\label{class_recepteur_meteo_a870aa4b1c557f60a07267a1a007b48b6}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!onStarted@{onStarted}}
+\index{onStarted@{onStarted}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{onStarted}{onStarted}}
+{\footnotesize\ttfamily void Recepteur\+Meteo\+::on\+Started (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a870aa4b1c557f60a07267a1a007b48b6}{Recepteur\+Meteo\+::on\+Started}}. 
+
+Valide le démarrage du programme RTL\+\_\+433 \mbox{\Hypertarget{class_recepteur_meteo_a9f80ef7184e34522c0e8acf96690949c}\label{class_recepteur_meteo_a9f80ef7184e34522c0e8acf96690949c}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!onTimer\_timeout@{onTimer\_timeout}}
+\index{onTimer\_timeout@{onTimer\_timeout}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{onTimer\_timeout}{onTimer\_timeout}}
+{\footnotesize\ttfamily void Recepteur\+Meteo\+::on\+Timer\+\_\+timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a9f80ef7184e34522c0e8acf96690949c}{Recepteur\+Meteo\+::on\+Timer\+\_\+timeout}}. 
+
+Fonction lancé à la fin du timer, enregistre les données et relance le timer \mbox{\Hypertarget{class_recepteur_meteo_a2f3980edd26e0037047006fac557df00}\label{class_recepteur_meteo_a2f3980edd26e0037047006fac557df00}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!readOutput@{readOutput}}
+\index{readOutput@{readOutput}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{readOutput}{readOutput}}
+{\footnotesize\ttfamily void Recepteur\+Meteo\+::read\+Output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a2f3980edd26e0037047006fac557df00}{Recepteur\+Meteo\+::read\+Output}}. 
+
+Récupère les informations reçues du capteur en temps réel et les transforme dans un format adapté à la bonne lecture du logiciel \mbox{\Hypertarget{class_recepteur_meteo_a10bb83c8b27e8b5f61c02b4fbbf0f332}\label{class_recepteur_meteo_a10bb83c8b27e8b5f61c02b4fbbf0f332}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!TraiterTrame@{TraiterTrame}}
+\index{TraiterTrame@{TraiterTrame}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{TraiterTrame()}{TraiterTrame()}}
+{\footnotesize\ttfamily void Recepteur\+Meteo\+::\+Traiter\+Trame (\begin{DoxyParamCaption}\item[{const QJson\+Document}]{\+\_\+trame\+Recue }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a10bb83c8b27e8b5f61c02b4fbbf0f332}{Recepteur\+Meteo\+::\+Traiter\+Trame}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+trame\+Recue} & Fichier JSON contenant toutes les informations reçues du logiciel\\
+\hline
+\end{DoxyParams}
+Permet le traitement des données reçues des capteurs \mbox{\Hypertarget{class_recepteur_meteo_a395bc97a18d16b64fcd5cf73d8dc7283}\label{class_recepteur_meteo_a395bc97a18d16b64fcd5cf73d8dc7283}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!TrouverCapteur@{TrouverCapteur}}
+\index{TrouverCapteur@{TrouverCapteur}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{TrouverCapteur()}{TrouverCapteur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_recepteur_meteo_a83a4b6dba2e6aa68ba7c9b317dd29ff1}{Recepteur\+Meteo\+::\+Type\+Capteurs}} Recepteur\+Meteo\+::\+Trouver\+Capteur (\begin{DoxyParamCaption}\item[{const QString}]{\+\_\+capteur }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_recepteur_meteo_a395bc97a18d16b64fcd5cf73d8dc7283}{Recepteur\+Meteo\+::\+Trouver\+Capteur}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+capteur} & Modèle du capteur don les données viennent d\textquotesingle{}être reçues \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un Type\+Capteurs permettant d\textquotesingle{}identifier le capteur
+\end{DoxyReturn}
+Identifie le type de capteur en fonction du modèle fournie en paramètre 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_recepteur_meteo_a1b79969137bc88869aec022b1ccc2100}\label{class_recepteur_meteo_a1b79969137bc88869aec022b1ccc2100}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!bd@{bd}}
+\index{bd@{bd}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{bd}{bd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_acces_b_d_d}{Acces\+BDD}}$\ast$ Recepteur\+Meteo\+::bd\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointeur de la BDD \mbox{\Hypertarget{class_recepteur_meteo_a368ea1b9289dd0e04fde335c42f3e440}\label{class_recepteur_meteo_a368ea1b9289dd0e04fde335c42f3e440}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!capteurs@{capteurs}}
+\index{capteurs@{capteurs}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{capteurs}{capteurs}}
+{\footnotesize\ttfamily QMap$<$int,\mbox{\hyperlink{class_capteurs}{Capteurs}}$\ast$$>$ Recepteur\+Meteo\+::capteurs\hspace{0.3cm}{\ttfamily [private]}}
+
+Map composé d\textquotesingle{}une clé en entier et d\textquotesingle{}une valeur en pointeur de \mbox{\hyperlink{class_capteurs}{Capteurs}} \mbox{\Hypertarget{class_recepteur_meteo_a8ded0abd00d50cacd4a186b4e10678ec}\label{class_recepteur_meteo_a8ded0abd00d50cacd4a186b4e10678ec}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!diffusion@{diffusion}}
+\index{diffusion@{diffusion}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{diffusion}{diffusion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_diffuseur_meteo}{Diffuseur\+Meteo}}$\ast$ Recepteur\+Meteo\+::diffusion\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointeur du serveur Web\+Socket \mbox{\Hypertarget{class_recepteur_meteo_a401273e9902febb504c02eccf4ddf7d5}\label{class_recepteur_meteo_a401273e9902febb504c02eccf4ddf7d5}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!process@{process}}
+\index{process@{process}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{process}{process}}
+{\footnotesize\ttfamily QProcess$\ast$ Recepteur\+Meteo\+::process\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointeur du processus à utiliser (RTL\+\_\+433) \mbox{\Hypertarget{class_recepteur_meteo_a40f3c4f59c90c7b0090aec2cc4b29d22}\label{class_recepteur_meteo_a40f3c4f59c90c7b0090aec2cc4b29d22}} 
+\index{RecepteurMeteo@{RecepteurMeteo}!timer@{timer}}
+\index{timer@{timer}!RecepteurMeteo@{RecepteurMeteo}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily QTimer$\ast$ Recepteur\+Meteo\+::timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointeur du timer 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{recepteurmeteo_8h}{recepteurmeteo.\+h}}\item 
+\mbox{\hyperlink{recepteurmeteo_8cpp}{recepteurmeteo.\+cpp}}\end{DoxyCompactItemize}

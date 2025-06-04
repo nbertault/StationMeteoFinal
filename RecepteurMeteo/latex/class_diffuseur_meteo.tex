@@ -1,0 +1,120 @@
+\hypertarget{class_diffuseur_meteo}{}\doxysection{Référence de la classe Diffuseur\+Meteo}
+\label{class_diffuseur_meteo}\index{DiffuseurMeteo@{DiffuseurMeteo}}
+
+
+{\ttfamily \#include $<$diffuseurmeteo.\+h$>$}
+
+
+
+Graphe de collaboration de Diffuseur\+Meteo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_diffuseur_meteo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_diffuseur_meteo_ae20a75d4f6c4e9affd9451231bed47ca}{Diffuseur\+Meteo}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_diffuseur_meteo_ae20a75d4f6c4e9affd9451231bed47ca}{Diffuseur\+Meteo\+::\+Diffuseur\+Meteo}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_diffuseur_meteo_a5f40d1af0f3b04b7614167209da700e2}{Diffuser\+Trame}} (const int \&\+\_\+id, const QString \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_diffuseur_meteo_a5f40d1af0f3b04b7614167209da700e2}{Diffuseur\+Meteo\+::\+Diffuser\+Trame}}. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_diffuseur_meteo_a62369d96564667e82a53b45743f915d3}{Creer\+Trame}} (const int \&\+\_\+id, const QString \&\+\_\+donnees)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_diffuseur_meteo_a62369d96564667e82a53b45743f915d3}{Diffuseur\+Meteo\+::\+Creer\+Trame}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_diffuseur_meteo_a65ca48109242c8fd6a389262684a3c4b}{on\+New\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_diffuseur_meteo_a65ca48109242c8fd6a389262684a3c4b}{Diffuseur\+Meteo\+::on\+New\+Connection}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+QWeb\+Socket\+Server $\ast$ \mbox{\hyperlink{class_diffuseur_meteo_a18e400f1f1fed83d77a8654f82d10334}{server}}
+\item 
+QList$<$ QWeb\+Socket $\ast$ $>$ \mbox{\hyperlink{class_diffuseur_meteo_aa3dd06bc430f01171437f6f6639fb57a}{liste\+Clients}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_diffuseur_meteo_ae20a75d4f6c4e9affd9451231bed47ca}\label{class_diffuseur_meteo_ae20a75d4f6c4e9affd9451231bed47ca}} 
+\index{DiffuseurMeteo@{DiffuseurMeteo}!DiffuseurMeteo@{DiffuseurMeteo}}
+\index{DiffuseurMeteo@{DiffuseurMeteo}!DiffuseurMeteo@{DiffuseurMeteo}}
+\doxysubsubsection{\texorpdfstring{DiffuseurMeteo()}{DiffuseurMeteo()}}
+{\footnotesize\ttfamily Diffuseur\+Meteo\+::\+Diffuseur\+Meteo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_diffuseur_meteo_ae20a75d4f6c4e9affd9451231bed47ca}{Diffuseur\+Meteo\+::\+Diffuseur\+Meteo}}. 
+
+Constructeur de la classe, permet l\textquotesingle{}ouverture du serveur Web\+Socket 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_diffuseur_meteo_a62369d96564667e82a53b45743f915d3}\label{class_diffuseur_meteo_a62369d96564667e82a53b45743f915d3}} 
+\index{DiffuseurMeteo@{DiffuseurMeteo}!CreerTrame@{CreerTrame}}
+\index{CreerTrame@{CreerTrame}!DiffuseurMeteo@{DiffuseurMeteo}}
+\doxysubsubsection{\texorpdfstring{CreerTrame()}{CreerTrame()}}
+{\footnotesize\ttfamily QString Diffuseur\+Meteo\+::\+Creer\+Trame (\begin{DoxyParamCaption}\item[{const int \&}]{\+\_\+id,  }\item[{const QString \&}]{\+\_\+donnees }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_diffuseur_meteo_a62369d96564667e82a53b45743f915d3}{Diffuseur\+Meteo\+::\+Creer\+Trame}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+id} & Id définie avec les clients pour identifier les capteurs \\
+\hline
+{\em \+\_\+donnees} & Données à inscrire dans une trame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Retourne une trame JSON sous forme d\textquotesingle{}une QString
+\end{DoxyReturn}
+Créer une trame JSON qui sera communiquer aux clients Web\+Socket \mbox{\Hypertarget{class_diffuseur_meteo_a5f40d1af0f3b04b7614167209da700e2}\label{class_diffuseur_meteo_a5f40d1af0f3b04b7614167209da700e2}} 
+\index{DiffuseurMeteo@{DiffuseurMeteo}!DiffuserTrame@{DiffuserTrame}}
+\index{DiffuserTrame@{DiffuserTrame}!DiffuseurMeteo@{DiffuseurMeteo}}
+\doxysubsubsection{\texorpdfstring{DiffuserTrame()}{DiffuserTrame()}}
+{\footnotesize\ttfamily void Diffuseur\+Meteo\+::\+Diffuser\+Trame (\begin{DoxyParamCaption}\item[{const int \&}]{\+\_\+id,  }\item[{const QString \&}]{\+\_\+donnees }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_diffuseur_meteo_a5f40d1af0f3b04b7614167209da700e2}{Diffuseur\+Meteo\+::\+Diffuser\+Trame}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \+\_\+id} & Id définie avec les clients pour identifier les capteurs \\
+\hline
+{\em \+\_\+donnees} & Données à transmettre aux clients\\
+\hline
+\end{DoxyParams}
+Diffuse une trame construite à partir des données et de la clé fournies en attributs à tous les clients \mbox{\Hypertarget{class_diffuseur_meteo_a65ca48109242c8fd6a389262684a3c4b}\label{class_diffuseur_meteo_a65ca48109242c8fd6a389262684a3c4b}} 
+\index{DiffuseurMeteo@{DiffuseurMeteo}!onNewConnection@{onNewConnection}}
+\index{onNewConnection@{onNewConnection}!DiffuseurMeteo@{DiffuseurMeteo}}
+\doxysubsubsection{\texorpdfstring{onNewConnection}{onNewConnection}}
+{\footnotesize\ttfamily void Diffuseur\+Meteo\+::on\+New\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+\mbox{\hyperlink{class_diffuseur_meteo_a65ca48109242c8fd6a389262684a3c4b}{Diffuseur\+Meteo\+::on\+New\+Connection}}. 
+
+Ajoute un client à la liste de clients lorsqu\textquotesingle{}un nouveau client se connecte 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_diffuseur_meteo_aa3dd06bc430f01171437f6f6639fb57a}\label{class_diffuseur_meteo_aa3dd06bc430f01171437f6f6639fb57a}} 
+\index{DiffuseurMeteo@{DiffuseurMeteo}!listeClients@{listeClients}}
+\index{listeClients@{listeClients}!DiffuseurMeteo@{DiffuseurMeteo}}
+\doxysubsubsection{\texorpdfstring{listeClients}{listeClients}}
+{\footnotesize\ttfamily QList$<$QWeb\+Socket $\ast$$>$ Diffuseur\+Meteo\+::liste\+Clients\hspace{0.3cm}{\ttfamily [private]}}
+
+List de pointeur de clients Web\+Socket \mbox{\Hypertarget{class_diffuseur_meteo_a18e400f1f1fed83d77a8654f82d10334}\label{class_diffuseur_meteo_a18e400f1f1fed83d77a8654f82d10334}} 
+\index{DiffuseurMeteo@{DiffuseurMeteo}!server@{server}}
+\index{server@{server}!DiffuseurMeteo@{DiffuseurMeteo}}
+\doxysubsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily QWeb\+Socket\+Server$\ast$ Diffuseur\+Meteo\+::server\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointeur du serveur Web\+Socket 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{diffuseurmeteo_8h}{diffuseurmeteo.\+h}}\item 
+\mbox{\hyperlink{diffuseurmeteo_8cpp}{diffuseurmeteo.\+cpp}}\end{DoxyCompactItemize}
